@@ -1,0 +1,80 @@
+[
+  {
+    "id": "cdd5c28cf2b57754a949c95da6541bc78bbecdb1b9d87674edc726a3f30cceaf",
+    "delta_token_f1": -0.17691154422788602,
+    "baseline": "A busy street scene with people walking and shopping in a foreign country.",
+    "sft": "A man and woman walk down a street with a manhole cover in the foreground .",
+    "references": [
+      "A busy city street with many people walking along it .",
+      "A couple walk to the side of a crowded walkway .",
+      "Chinese market street in the winter time .",
+      "People walk down a paved street that has red lanterns hung from the buildings .",
+      "People walking down street lined with Chinese lanterns ."
+    ]
+  },
+  {
+    "id": "2d0e88d70dfbc56855cfd566f5061c83e23a97750a1c3739514973ae859e0c99",
+    "delta_token_f1": -0.16000000000000003,
+    "baseline": "A dog is playing in the water, splashing around and holding a stick in its mouth.",
+    "sft": "A dog is playing in the water .",
+    "references": [
+      "A dog is fetching a stick from a lake .",
+      "A dog swimming with a stick in its mouth .",
+      "a grey dog swimming through a river with a stick in his mouth",
+      "Dog carries stick in mouth while in water .",
+      "Dog swimming through water carrying stick in its mouth"
+    ]
+  },
+  {
+    "id": "01ebd7b2d4af34f882afe0fd49b422edd1a36b3a434f3904f1447115bdc5404a",
+    "delta_token_f1": -0.1527777777777778,
+    "baseline": "Two children are playing on a playground slide.",
+    "sft": "A boy is standing inside of a large metal tube .",
+    "references": [
+      "Two boys are running in a metal barrel .",
+      "Two boys are running in a spinning tube .",
+      "Two boys are walking inside a human-size exercise-wheel .",
+      "Two boys running in a giant metal wheel .",
+      "Two boys walking to make a cylinder roll at a small carnival ."
+    ]
+  },
+  {
+    "id": "994044c25463c5125aeb5cd6032aba2f2849d442078e1b60fa700a7e1c35b068",
+    "delta_token_f1": 0.29166666666666663,
+    "baseline": "A climber ascends a steep, rocky cliff using climbing gear and ropes.",
+    "sft": "A man is climbing up a rock face .",
+    "references": [
+      "A girl is climbing a rock wall .",
+      "A person climbs a steep mountain .",
+      "A person wearing a white hat climbs a rock .",
+      "A rock climber ascends .",
+      "Someone climbs a rocks ."
+    ]
+  },
+  {
+    "id": "57dfa9ee2d999862db9ea6b1347050a26a661fd2c76954042293a9a8048f6904",
+    "delta_token_f1": 0.3186813186813187,
+    "baseline": "A large alligator is wading through shallow water, with its front legs raised and tail visible.",
+    "sft": "A large alligator is in the water .",
+    "references": [
+      "The iguanas wrestled along the rocky water bank .",
+      "The two reptiles are standing on their back legs near deep water .",
+      "Two lizards fighting .",
+      "Two lizards fight in the water .",
+      "Two oriental lizards are fighting for dominance in a small pond"
+    ]
+  },
+  {
+    "id": "080b9fc1f589de248a401ada49bbfbb95ea5ec281d77b1dd8ce20621edc012e9",
+    "delta_token_f1": 0.38655462184873945,
+    "baseline": "A bird with outstretched wings is flying over a grassy field.",
+    "sft": "A bird is flying with its wings spread .",
+    "references": [
+      "A bird flying in the air",
+      "a bird flies low to the ground .",
+      "A bird with its wings spread",
+      "A hawk flies down towards the grass .",
+      "A hawk is flying , trailing lines from its legs ."
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "completed_evaluations": 12,
+  "predictions_per_evaluation": 64,
+  "recomputed_metrics": true,
+  "adapter_count": 2,
+  "evaluations": [
+    "zero_shot_concise_plain_test",
+    "zero_shot_concise_rag_test",
+    "zero_shot_grounded_plain_test",
+    "zero_shot_grounded_rag_test",
+    "sft_0.25_concise_plain_test",
+    "sft_0.25_concise_rag_test",
+    "sft_0.25_grounded_plain_test",
+    "sft_0.25_grounded_rag_test",
+    "sft_1_concise_plain_test",
+    "sft_1_concise_rag_test",
+    "sft_1_grounded_plain_test",
+    "sft_1_grounded_rag_test"
+  ]
+}

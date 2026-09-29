@@ -1,0 +1,12 @@
+# Install CUDA PyTorch separately; RTX 50-series requires a compatible CUDA build.
+torch>=2.7,<2.12
+torchvision>=0.22,<0.27
+transformers==4.57.1
+peft==0.17.1
+datasets==3.6.0
+accelerate==1.10.1
+huggingface-hub>=0.34,<1.0
+numpy>=1.26,<3
+Pillow>=10
+matplotlib>=3.8
+safetensors>=0.4

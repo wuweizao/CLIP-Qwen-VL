@@ -1,0 +1,147 @@
+{
+  "config": {
+    "seed": 42,
+    "dataset": "jxie/flickr8k",
+    "clip_model": "D:\\Project\\CLIP\\data\\models\\clip-vit-base-patch32",
+    "vl_model": "D:\\Project\\CLIP\\data\\models\\Qwen2.5-VL-3B-Instruct",
+    "train_images": 128,
+    "validation_images": 32,
+    "test_images": 64,
+    "captions_per_train_image": 2,
+    "batch_size": 8,
+    "max_pixels": 100352,
+    "max_new_tokens": 64,
+    "epochs": 2,
+    "learning_rate": 0.0001,
+    "gradient_accumulation_steps": 8,
+    "lora_rank": 8,
+    "fractions": [
+      0.25,
+      1.0
+    ],
+    "prompts": [
+      "concise",
+      "grounded"
+    ],
+    "rag_k": 2
+  },
+  "python": "3.10.21",
+  "dataset_source": {
+    "dataset": "jxie/flickr8k",
+    "revision": "56f58c967835f7c508d684f36bd7897cca9d7634",
+    "seed": 42,
+    "counts": {
+      "train": 128,
+      "instructions": 256,
+      "validation": 32,
+      "test": 64
+    }
+  },
+  "model_sources": {
+    "clip_model": {
+      "repo": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "files": [
+        {
+          "file": "config.json",
+          "sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770"
+        },
+        {
+          "file": "merges.txt",
+          "sha256": "f526393189112391ce6f9795d4695f704121ce452c3aad1f5335cc41337eba85"
+        },
+        {
+          "file": "preprocessor_config.json",
+          "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd"
+        },
+        {
+          "file": "pytorch_model.bin",
+          "sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f"
+        },
+        {
+          "file": "special_tokens_map.json",
+          "sha256": "f8c0d6c39aee3f8431078ef6646567b0aba7f2246e9c54b8b99d55c22b707cbf"
+        },
+        {
+          "file": "tokenizer.json",
+          "sha256": "b556ac8c99757ffb677208af34bc8c6721572114111a6e0aaf5fa69ff0b8d842"
+        },
+        {
+          "file": "tokenizer_config.json",
+          "sha256": "34b7336e4bee12e0a9730eaf5189f582ef3c3eea5027f65730e5717256755aad"
+        },
+        {
+          "file": "vocab.json",
+          "sha256": "5047b556ce86ccaf6aa22b3ffccfc52d391ea4accdab9c2f2407da5b742d4363"
+        }
+      ]
+    },
+    "vl_model": {
+      "repo": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "files": [
+        {
+          "file": "chat_template.json",
+          "sha256": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96"
+        },
+        {
+          "file": "config.json",
+          "sha256": "7ed3eed5be6924cc800e8a5e53fc405c1aab1aaf36bad65c33403b36c56827f5"
+        },
+        {
+          "file": "generation_config.json",
+          "sha256": "533f191cc257b7de37a4fccd0a7a1706d75e1aa660f93efaa54e5a2a9f9aace9"
+        },
+        {
+          "file": "merges.txt",
+          "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+        },
+        {
+          "file": "model.safetensors.index.json",
+          "sha256": "c7dd78a4c6bea60b51332f1baf37b8f8124ecab2c35395a29a29825bf2619768"
+        },
+        {
+          "file": "preprocessor_config.json",
+          "sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0"
+        },
+        {
+          "file": "tokenizer.json",
+          "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+        },
+        {
+          "file": "tokenizer_config.json",
+          "sha256": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56"
+        },
+        {
+          "file": "vocab.json",
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        {
+          "file": "model-00001-of-00002.safetensors",
+          "sha256": "41a8895c164b4d32bae6b302f4603fcbc1797f32dafa45c7e9bcda23c6755df8"
+        },
+        {
+          "file": "model-00002-of-00002.safetensors",
+          "sha256": "365531ff8752420e89dee707b79d021fb2d6e25abafe486f080555a4fe6972e4"
+        }
+      ]
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.1",
+    "peft": "0.17.1",
+    "datasets": "3.6.0",
+    "accelerate": "1.10.1"
+  },
+  "manifests": {
+    "train": "5a3931084710f1c83033a91ed718c16b12052a570c21b577a9b3370ed536b9d6",
+    "validation": "e276589c76bc407f0acaa78e178600347e630bc0917ee1d3b031a9c585b17d2e",
+    "test": "1a441add6a827b808778dd77742aea51a2575078d76143bc08c24dcf428df417"
+  },
+  "fraction": 1.0,
+  "train_images": 128,
+  "train_instructions": 256,
+  "trainable_parameters": 3686400
+}
