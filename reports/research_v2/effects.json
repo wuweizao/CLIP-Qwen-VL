@@ -1,0 +1,4514 @@
+[
+  {
+    "effect": "combined:noise_adaptive-plain_image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.044556352947049606,
+    "seed_sd": null,
+    "image_ci_low": -0.007217710551602596,
+    "image_ci_high": 0.09647620284610926,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.044556352947049606
+      }
+    ]
+  },
+  {
+    "effect": "combined:noise_adaptive-plain_image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.0009250636503566056,
+    "seed_sd": null,
+    "image_ci_low": -0.0069118809296924155,
+    "image_ci_high": 0.005054128596384542,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0009250636503566056
+      }
+    ]
+  },
+  {
+    "effect": "combined:noise_adaptive-plain_image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.015784936480116203,
+    "seed_sd": null,
+    "image_ci_low": 0.0022616446273741155,
+    "image_ci_high": 0.029964465023657134,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.015784936480116203
+      }
+    ]
+  },
+  {
+    "effect": "combined:noise_adaptive-plain_image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.10546875,
+    "seed_sd": null,
+    "image_ci_low": -0.44921875,
+    "image_ci_high": 0.2421875,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.10546875
+      }
+    ]
+  },
+  {
+    "effect": "interaction:(retrieval_image-retrieval_none)-(plain_image-plain_none)",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 7.430360287344773e-05,
+    "seed_sd": 0.012353469468590542,
+    "image_ci_low": -0.046976371126949426,
+    "image_ci_high": 0.04829393059620448,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.008660918429547899
+      },
+      {
+        "seed": 43,
+        "delta": 0.008809525635294795
+      }
+    ]
+  },
+  {
+    "effect": "interaction:(retrieval_image-retrieval_none)-(plain_image-plain_none)",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.00614224438322708,
+    "seed_sd": 0.00336418141026996,
+    "image_ci_low": -0.010731026304711122,
+    "image_ci_high": -0.0016963555299298618,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.008521079871570691
+      },
+      {
+        "seed": 43,
+        "delta": -0.0037634088948834687
+      }
+    ]
+  },
+  {
+    "effect": "interaction:(retrieval_image-retrieval_none)-(plain_image-plain_none)",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -9.431497561820934e-05,
+    "seed_sd": 0.0008163020062996881,
+    "image_ci_low": -0.01201126226419278,
+    "image_ci_high": 0.012430990730876874,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.0004828977085324839
+      },
+      {
+        "seed": 43,
+        "delta": -0.0006715276597689026
+      }
+    ]
+  },
+  {
+    "effect": "interaction:(retrieval_image-retrieval_none)-(plain_image-plain_none)",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.47265625,
+    "seed_sd": 0.5358543576179305,
+    "image_ci_low": -0.806689453125,
+    "image_ci_high": -0.14252929687500027,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.8515625
+      },
+      {
+        "seed": 43,
+        "delta": -0.09375
+      }
+    ]
+  },
+  {
+    "effect": "noise:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.018495592506670308,
+    "seed_sd": null,
+    "image_ci_low": -0.03316471019686395,
+    "image_ci_high": 0.07057334091063544,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.018495592506670308
+      }
+    ]
+  },
+  {
+    "effect": "noise:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.000613261217949912,
+    "seed_sd": null,
+    "image_ci_low": -0.0045362429664237425,
+    "image_ci_high": 0.005912044085562229,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.000613261217949912
+      }
+    ]
+  },
+  {
+    "effect": "noise:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.12963409203643578,
+    "seed_sd": null,
+    "image_ci_low": -0.15234561364200033,
+    "image_ci_high": -0.10781225691626087,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.12963409203643578
+      }
+    ]
+  },
+  {
+    "effect": "noise:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.01094450444974478,
+    "seed_sd": null,
+    "image_ci_low": -0.003258584892895245,
+    "image_ci_high": 0.025183318729313033,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.01094450444974478
+      }
+    ]
+  },
+  {
+    "effect": "noise:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.046875,
+    "seed_sd": null,
+    "image_ci_low": -0.28525390625,
+    "image_ci_high": 0.38291015624999947,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.046875
+      }
+    ]
+  },
+  {
+    "effect": "noise:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.002347126427392413,
+    "seed_sd": null,
+    "image_ci_low": -0.03322329989444269,
+    "image_ci_high": 0.03851980523399544,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.002347126427392413
+      }
+    ]
+  },
+  {
+    "effect": "noise:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 8.501432603225112e-05,
+    "seed_sd": null,
+    "image_ci_low": -0.0031757976139488164,
+    "image_ci_high": 0.0031995948629628393,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 8.501432603225112e-05
+      }
+    ]
+  },
+  {
+    "effect": "noise:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.12184244791666667,
+    "seed_sd": null,
+    "image_ci_low": 0.09441987537202381,
+    "image_ci_high": 0.15050757998511902,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.12184244791666667
+      }
+    ]
+  },
+  {
+    "effect": "noise:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.002297722897087601,
+    "seed_sd": null,
+    "image_ci_low": -0.012199617990014755,
+    "image_ci_high": 0.007529229736002619,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.002297722897087601
+      }
+    ]
+  },
+  {
+    "effect": "noise:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.00390625,
+    "seed_sd": null,
+    "image_ci_low": -0.23046875,
+    "image_ci_high": 0.23828125,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.00390625
+      }
+    ]
+  },
+  {
+    "effect": "noise:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.04183712515924229,
+    "seed_sd": null,
+    "image_ci_low": -0.13753582625643523,
+    "image_ci_high": 0.027135264042530315,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.04183712515924229
+      }
+    ]
+  },
+  {
+    "effect": "noise:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.0003582146018743515,
+    "seed_sd": null,
+    "image_ci_low": -0.005622394382953644,
+    "image_ci_high": 0.004710228939075023,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0003582146018743515
+      }
+    ]
+  },
+  {
+    "effect": "noise:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.014826276154401151,
+    "seed_sd": null,
+    "image_ci_low": -0.04114913081709957,
+    "image_ci_high": 0.006808810763888883,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.014826276154401151
+      }
+    ]
+  },
+  {
+    "effect": "noise:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.006303392348346032,
+    "seed_sd": null,
+    "image_ci_low": -0.008507009528639954,
+    "image_ci_high": 0.021963908188404328,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.006303392348346032
+      }
+    ]
+  },
+  {
+    "effect": "noise:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.375,
+    "seed_sd": null,
+    "image_ci_low": -0.78125,
+    "image_ci_high": -0.09375,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.375
+      }
+    ]
+  },
+  {
+    "effect": "noise:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.016148466079277897,
+    "seed_sd": null,
+    "image_ci_low": -0.07556162531788337,
+    "image_ci_high": 0.04082396813587355,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.016148466079277897
+      }
+    ]
+  },
+  {
+    "effect": "noise:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.0005282468919176608,
+    "seed_sd": null,
+    "image_ci_low": -0.00670833178810426,
+    "image_ci_high": 0.005775187775725498,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0005282468919176608
+      }
+    ]
+  },
+  {
+    "effect": "noise:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.25147653995310243,
+    "seed_sd": null,
+    "image_ci_low": 0.22331255143511003,
+    "image_ci_high": 0.27942309182787695,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.25147653995310243
+      }
+    ]
+  },
+  {
+    "effect": "noise:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.013242227346832381,
+    "seed_sd": null,
+    "image_ci_low": -0.030151474416561987,
+    "image_ci_high": 0.00320585477640017,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.013242227346832381
+      }
+    ]
+  },
+  {
+    "effect": "noise:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.04296875,
+    "seed_sd": null,
+    "image_ci_low": -0.41806640625,
+    "image_ci_high": 0.35166015624999947,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.04296875
+      }
+    ]
+  },
+  {
+    "effect": "noise:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.08875014250163499,
+    "seed_sd": null,
+    "image_ci_low": -0.2236814559134334,
+    "image_ci_high": 0.031373898877039556,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.08875014250163499
+      }
+    ]
+  },
+  {
+    "effect": "noise:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.0130195525707677,
+    "seed_sd": null,
+    "image_ci_low": -0.030499151660478674,
+    "image_ci_high": 0.0032451518345624013,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0130195525707677
+      }
+    ]
+  },
+  {
+    "effect": "noise:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.0023544597763347805,
+    "seed_sd": null,
+    "image_ci_low": -0.03166063537157286,
+    "image_ci_high": 0.036087831439393925,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.0023544597763347805
+      }
+    ]
+  },
+  {
+    "effect": "noise:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.006018222000424976,
+    "seed_sd": null,
+    "image_ci_low": -0.033017622030421495,
+    "image_ci_high": 0.018700559174186306,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.006018222000424976
+      }
+    ]
+  },
+  {
+    "effect": "noise:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.921875,
+    "seed_sd": null,
+    "image_ci_low": -1.796875,
+    "image_ci_high": 0.00039062499999786837,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.921875
+      }
+    ]
+  },
+  {
+    "effect": "noise:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.060782241927876166,
+    "seed_sd": null,
+    "image_ci_low": -0.1321752265122892,
+    "image_ci_high": 0.008931692755665707,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.060782241927876166
+      }
+    ]
+  },
+  {
+    "effect": "noise:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.009748668817337602,
+    "seed_sd": null,
+    "image_ci_low": -0.016082311136415228,
+    "image_ci_high": -0.003965978023188658,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.009748668817337602
+      }
+    ]
+  },
+  {
+    "effect": "noise:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.05999658978174603,
+    "seed_sd": null,
+    "image_ci_low": 0.044712727864583336,
+    "image_ci_high": 0.07630076574900792,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.05999658978174603
+      }
+    ]
+  },
+  {
+    "effect": "noise:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.012707218439719066,
+    "seed_sd": null,
+    "image_ci_low": -0.0288110179965516,
+    "image_ci_high": 0.004100987207570562,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.012707218439719066
+      }
+    ]
+  },
+  {
+    "effect": "noise:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.6484375,
+    "seed_sd": null,
+    "image_ci_low": -1.00791015625,
+    "image_ci_high": -0.26953125,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.6484375
+      }
+    ]
+  },
+  {
+    "effect": "noise:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.1112693093046111,
+    "seed_sd": null,
+    "image_ci_low": -0.2521590331417618,
+    "image_ci_high": 0.029269062203637498,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.1112693093046111
+      }
+    ]
+  },
+  {
+    "effect": "noise:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.0014979130355641246,
+    "seed_sd": null,
+    "image_ci_low": -0.016088527496322058,
+    "image_ci_high": 0.012518934105173666,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0014979130355641246
+      }
+    ]
+  },
+  {
+    "effect": "noise:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.09864014024170276,
+    "seed_sd": null,
+    "image_ci_low": 0.04194123151154401,
+    "image_ci_high": 0.16242175521960672,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.09864014024170276
+      }
+    ]
+  },
+  {
+    "effect": "noise:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.020922969199774023,
+    "seed_sd": null,
+    "image_ci_low": -0.05865183371966862,
+    "image_ci_high": 0.014838210258374656,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.020922969199774023
+      }
+    ]
+  },
+  {
+    "effect": "noise:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.421875,
+    "seed_sd": null,
+    "image_ci_low": -1.265625,
+    "image_ci_high": 0.421875,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.421875
+      }
+    ]
+  },
+  {
+    "effect": "noise:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.1022802862043402,
+    "seed_sd": null,
+    "image_ci_low": -0.24657445052280189,
+    "image_ci_high": 0.033466096825994475,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.1022802862043402
+      }
+    ]
+  },
+  {
+    "effect": "noise:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.003039626171812415,
+    "seed_sd": null,
+    "image_ci_low": -0.011449312587501481,
+    "image_ci_high": 0.01681931214989162,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.003039626171812415
+      }
+    ]
+  },
+  {
+    "effect": "noise:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.11609453914141414,
+    "seed_sd": null,
+    "image_ci_low": 0.06123919158098846,
+    "image_ci_high": 0.17588061135912697,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.11609453914141414
+      }
+    ]
+  },
+  {
+    "effect": "noise:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.01113172983684063,
+    "seed_sd": null,
+    "image_ci_low": -0.04746700748645304,
+    "image_ci_high": 0.02806842253986901,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.01113172983684063
+      }
+    ]
+  },
+  {
+    "effect": "noise:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.515625,
+    "seed_sd": null,
+    "image_ci_low": -1.406640625,
+    "image_ci_high": 0.328125,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.515625
+      }
+    ]
+  },
+  {
+    "effect": "plain:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.03259621358615381,
+    "seed_sd": 0.03232447305709734,
+    "image_ci_low": -0.0047611227034322435,
+    "image_ci_high": 0.07134707323931955,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.009739359489198431
+      },
+      {
+        "seed": 43,
+        "delta": 0.05545306768310919
+      }
+    ]
+  },
+  {
+    "effect": "plain:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.000890065057319589,
+    "seed_sd": 0.00033790073050962385,
+    "image_ci_low": -0.002601356874947669,
+    "image_ci_high": 0.004215826893414486,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.0006511331594083458
+      },
+      {
+        "seed": 43,
+        "delta": 0.001128996955230832
+      }
+    ]
+  },
+  {
+    "effect": "plain:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.07723193147997837,
+    "seed_sd": 0.07299960390985867,
+    "image_ci_low": -0.09095176443565114,
+    "image_ci_high": -0.06337977818080358,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.025613416531385283
+      },
+      {
+        "seed": 43,
+        "delta": -0.12885044642857144
+      }
+    ]
+  },
+  {
+    "effect": "plain:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.012509328551572095,
+    "seed_sd": 0.00626939605744096,
+    "image_ci_low": 0.0019931162402182516,
+    "image_ci_high": 0.02407117175664618,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.008076196085411387
+      },
+      {
+        "seed": 43,
+        "delta": 0.016942461017732804
+      }
+    ]
+  },
+  {
+    "effect": "plain:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.04296875,
+    "seed_sd": 0.18230096702465678,
+    "image_ci_low": -0.201171875,
+    "image_ci_high": 0.28715820312499973,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0859375
+      },
+      {
+        "seed": 43,
+        "delta": 0.171875
+      }
+    ]
+  },
+  {
+    "effect": "plain:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.006053396034703935,
+    "seed_sd": 0.017145675757414134,
+    "image_ci_low": -0.042263359835979106,
+    "image_ci_high": 0.029806799681793422,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.018177219630797263
+      },
+      {
+        "seed": 43,
+        "delta": 0.006070427561389393
+      }
+    ]
+  },
+  {
+    "effect": "plain:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.002364746615057811,
+    "seed_sd": 0.0010875407742033782,
+    "image_ci_low": -0.000999762143692351,
+    "image_ci_high": 0.005472751068737124,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.003133754071313888
+      },
+      {
+        "seed": 43,
+        "delta": 0.0015957391588017344
+      }
+    ]
+  },
+  {
+    "effect": "plain:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.16884476742875182,
+    "seed_sd": 0.06927729700740716,
+    "image_ci_low": 0.14204805272310156,
+    "image_ci_high": 0.19558738367210046,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.21783121392496393
+      },
+      {
+        "seed": 43,
+        "delta": 0.11985832093253969
+      }
+    ]
+  },
+  {
+    "effect": "plain:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.003261476491401447,
+    "seed_sd": 0.006117693496150896,
+    "image_ci_low": -0.014057222234740003,
+    "image_ci_high": 0.007072629555717146,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.007587339047750583
+      },
+      {
+        "seed": 43,
+        "delta": 0.0010643860649476892
+      }
+    ]
+  },
+  {
+    "effect": "plain:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.046875,
+    "seed_sd": 0.14363106492851746,
+    "image_ci_low": -0.197265625,
+    "image_ci_high": 0.28715820312499973,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.1484375
+      },
+      {
+        "seed": 43,
+        "delta": -0.0546875
+      }
+    ]
+  },
+  {
+    "effect": "plain:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.003775905934633672,
+    "seed_sd": null,
+    "image_ci_low": -0.04448213092317367,
+    "image_ci_high": 0.050158491631873046,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.003775905934633672
+      }
+    ]
+  },
+  {
+    "effect": "plain:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.0035171001218259335,
+    "seed_sd": null,
+    "image_ci_low": -0.001751623349264264,
+    "image_ci_high": 0.01073491337592713,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.0035171001218259335
+      }
+    ]
+  },
+  {
+    "effect": "plain:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.003906249999999999,
+    "seed_sd": null,
+    "image_ci_low": -0.024220145089285713,
+    "image_ci_high": 0.014958147321428557,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.003906249999999999
+      }
+    ]
+  },
+  {
+    "effect": "plain:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.008855453369768812,
+    "seed_sd": null,
+    "image_ci_low": -0.002282650833910027,
+    "image_ci_high": 0.020814610296597178,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.008855453369768812
+      }
+    ]
+  },
+  {
+    "effect": "plain:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.25,
+    "seed_sd": null,
+    "image_ci_low": -0.516015625,
+    "image_ci_high": 0.0,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.25
+      }
+    ]
+  },
+  {
+    "effect": "plain:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.03864960962085774,
+    "seed_sd": 0.015178797299683208,
+    "image_ci_low": -0.09730928039152552,
+    "image_ci_high": 0.019639161639892915,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.027916579119995687
+      },
+      {
+        "seed": 43,
+        "delta": -0.04938264012171979
+      }
+    ]
+  },
+  {
+    "effect": "plain:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.0014746815577382222,
+    "seed_sd": 0.001425441504713002,
+    "image_ci_low": -0.0038965915173321264,
+    "image_ci_high": 0.0071639938269072445,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.002482620911905542
+      },
+      {
+        "seed": 43,
+        "delta": 0.00046674220357090235
+      }
+    ]
+  },
+  {
+    "effect": "plain:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.24607669890873018,
+    "seed_sd": 0.0037223069024514875,
+    "image_ci_low": 0.21861643957713295,
+    "image_ci_high": 0.2745463440910218,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.24344463045634923
+      },
+      {
+        "seed": 43,
+        "delta": 0.2487087673611111
+      }
+    ]
+  },
+  {
+    "effect": "plain:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.015770805042973544,
+    "seed_sd": 0.00015170256129006586,
+    "image_ci_low": -0.032591625928372524,
+    "image_ci_high": 0.0007094270599385846,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.01566353513316197
+      },
+      {
+        "seed": 43,
+        "delta": -0.015878074952785117
+      }
+    ]
+  },
+  {
+    "effect": "plain:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.00390625,
+    "seed_sd": 0.3259320319531743,
+    "image_ci_low": -0.37890625,
+    "image_ci_high": 0.38676757812499973,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.234375
+      },
+      {
+        "seed": 43,
+        "delta": -0.2265625
+      }
+    ]
+  },
+  {
+    "effect": "plain:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.03491890698475715,
+    "seed_sd": null,
+    "image_ci_low": -0.03129607008246351,
+    "image_ci_high": 0.10388911426231283,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.03491890698475715
+      }
+    ]
+  },
+  {
+    "effect": "plain:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.00903802050743252,
+    "seed_sd": null,
+    "image_ci_low": -0.02225341508165002,
+    "image_ci_high": 0.0036653281713370156,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.00903802050743252
+      }
+    ]
+  },
+  {
+    "effect": "plain:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.0012276785714285705,
+    "seed_sd": null,
+    "image_ci_low": -0.033205760168650796,
+    "image_ci_high": 0.03386827256944444,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.0012276785714285705
+      }
+    ]
+  },
+  {
+    "effect": "plain:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.0035453748188374046,
+    "seed_sd": null,
+    "image_ci_low": -0.012807653238097447,
+    "image_ci_high": 0.018509104345153207,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.0035453748188374046
+      }
+    ]
+  },
+  {
+    "effect": "plain:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.484375,
+    "seed_sd": null,
+    "image_ci_low": -1.03125,
+    "image_ci_high": 0.046875,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.484375
+      }
+    ]
+  },
+  {
+    "effect": "plain:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.018719824947656054,
+    "seed_sd": 0.02218009043467878,
+    "image_ci_low": -0.08351077585135078,
+    "image_ci_high": 0.042493933869194825,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0030361325939638134
+      },
+      {
+        "seed": 43,
+        "delta": -0.034403517301348295
+      }
+    ]
+  },
+  {
+    "effect": "plain:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.0024280288926092908,
+    "seed_sd": 0.0018328634412618297,
+    "image_ci_low": -0.008164393570041284,
+    "image_ci_high": 0.0031605433741788047,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0011319987243041396
+      },
+      {
+        "seed": 43,
+        "delta": -0.003724059060914442
+      }
+    ]
+  },
+  {
+    "effect": "plain:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.056352306547619045,
+    "seed_sd": 0.002358776341011674,
+    "image_ci_low": 0.04218469044518849,
+    "image_ci_high": 0.07059275793650793,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.0546843998015873
+      },
+      {
+        "seed": 43,
+        "delta": 0.05802021329365079
+      }
+    ]
+  },
+  {
+    "effect": "plain:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.014612859979005507,
+    "seed_sd": 0.005822571895175356,
+    "image_ci_low": -0.029787084854177262,
+    "image_ci_high": 0.0006533456017557558,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.010495679907980806
+      },
+      {
+        "seed": 43,
+        "delta": -0.01873004005003021
+      }
+    ]
+  },
+  {
+    "effect": "plain:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.2421875,
+    "seed_sd": 0.2872621298570349,
+    "image_ci_low": -0.61923828125,
+    "image_ci_high": 0.12700195312499973,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0390625
+      },
+      {
+        "seed": 43,
+        "delta": -0.4453125
+      }
+    ]
+  },
+  {
+    "effect": "plain:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.0606446202075843,
+    "seed_sd": null,
+    "image_ci_low": -0.17472777610100412,
+    "image_ci_high": 0.05555098363953007,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0606446202075843
+      }
+    ]
+  },
+  {
+    "effect": "plain:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.0008910050382837653,
+    "seed_sd": null,
+    "image_ci_low": -0.01303935467149131,
+    "image_ci_high": 0.014789578242925904,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.0008910050382837653
+      }
+    ]
+  },
+  {
+    "effect": "plain:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.09981927794427795,
+    "seed_sd": null,
+    "image_ci_low": 0.04518889205412643,
+    "image_ci_high": 0.15805937985625484,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.09981927794427795
+      }
+    ]
+  },
+  {
+    "effect": "plain:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.0050382912223980985,
+    "seed_sd": null,
+    "image_ci_low": -0.04171424665849657,
+    "image_ci_high": 0.027149835114833137,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0050382912223980985
+      }
+    ]
+  },
+  {
+    "effect": "plain:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.359375,
+    "seed_sd": null,
+    "image_ci_low": -1.1875,
+    "image_ci_high": 0.578125,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.359375
+      }
+    ]
+  },
+  {
+    "effect": "plain:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.017073482670588624,
+    "seed_sd": null,
+    "image_ci_low": -0.1143907516580677,
+    "image_ci_high": 0.08215017606065543,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.017073482670588624
+      }
+    ]
+  },
+  {
+    "effect": "plain:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.002067020395770669,
+    "seed_sd": null,
+    "image_ci_low": -0.010867220174986869,
+    "image_ci_high": 0.015376427414594192,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.002067020395770669
+      }
+    ]
+  },
+  {
+    "effect": "plain:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.11767789502164502,
+    "seed_sd": null,
+    "image_ci_low": 0.057306801271645016,
+    "image_ci_high": 0.18400596365440103,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.11767789502164502
+      }
+    ]
+  },
+  {
+    "effect": "plain:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.004702570324157231,
+    "seed_sd": null,
+    "image_ci_low": -0.02701455684526166,
+    "image_ci_high": 0.03893749874157959,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.004702570324157231
+      }
+    ]
+  },
+  {
+    "effect": "plain:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.53125,
+    "seed_sd": null,
+    "image_ci_low": -1.15625,
+    "image_ci_high": 0.078125,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.53125
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.026580309760065122,
+    "seed_sd": 0.0006190160859867424,
+    "image_ci_low": -0.030675929220077943,
+    "image_ci_high": 0.08064407763278165,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.02614259928800034
+      },
+      {
+        "seed": 43,
+        "delta": 0.027018020232129902
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.005033881534473039,
+    "seed_sd": 0.0030519264608527704,
+    "image_ci_low": -0.0008287880318675888,
+    "image_ci_high": 0.010588715325866358,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.007191919430624694
+      },
+      {
+        "seed": 43,
+        "delta": 0.002875843638321385
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.12955285274621212,
+    "seed_sd": 0.0003269324592285798,
+    "image_ci_low": -0.15183318959686146,
+    "image_ci_high": -0.10805971440126713,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.1293216765873016
+      },
+      {
+        "seed": 43,
+        "delta": -0.12978402890512264
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.013885009492746065,
+    "seed_sd": 0.0028138662964718427,
+    "image_ci_low": 0.0008573357242211645,
+    "image_ci_high": 0.02729530611074273,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.011895305553158549
+      },
+      {
+        "seed": 43,
+        "delta": 0.01587471343233358
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:adaptive-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.3515625,
+    "seed_sd": 0.16020388011257716,
+    "image_ci_low": 0.044921875,
+    "image_ci_high": 0.6719238281249997,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.46484375
+      },
+      {
+        "seed": 43,
+        "delta": 0.23828125
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.011994996257919173,
+    "seed_sd": 0.002206311745105918,
+    "image_ci_low": -0.044648403177776776,
+    "image_ci_high": 0.02030135509620452,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.010434898261543254
+      },
+      {
+        "seed": 43,
+        "delta": -0.013555094254295094
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.0003663187089841813,
+    "seed_sd": 0.0011131865552958128,
+    "image_ci_low": -0.0023828196317481343,
+    "image_ci_high": 0.0029701793464482723,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.0011534604709595442
+      },
+      {
+        "seed": 43,
+        "delta": -0.0004208230529911816
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.12220517113095239,
+    "seed_sd": 0.0007299930497740634,
+    "image_ci_low": 0.0945248558407738,
+    "image_ci_high": 0.15064708891369047,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.1216889880952381
+      },
+      {
+        "seed": 43,
+        "delta": 0.12272135416666667
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.0019801105258456897,
+    "seed_sd": 0.0018458617288820893,
+    "image_ci_low": -0.009218153783904592,
+    "image_ci_high": 0.005954196094248387,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0032853318714709395
+      },
+      {
+        "seed": 43,
+        "delta": -0.0006748891802204398
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:adaptive-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.1171875,
+    "seed_sd": 0.04971844555217912,
+    "image_ci_low": -0.32822265625,
+    "image_ci_high": 0.07817382812499973,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.15234375
+      },
+      {
+        "seed": 43,
+        "delta": -0.08203125
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.0312421952017852,
+    "seed_sd": null,
+    "image_ci_low": -0.07959261619034745,
+    "image_ci_high": 0.013205581633361359,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0312421952017852
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.002868205774575472,
+    "seed_sd": null,
+    "image_ci_low": -0.00026778041501529515,
+    "image_ci_high": 0.006382371211657297,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.002868205774575472
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.012568204365079369,
+    "seed_sd": null,
+    "image_ci_low": -0.04115838913690476,
+    "image_ci_high": 0.01065770709325394,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.012568204365079369
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.0029622057989446013,
+    "seed_sd": null,
+    "image_ci_low": -0.015655886741301295,
+    "image_ci_high": 0.007803363757950802,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0029622057989446013
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:conflict-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.03125,
+    "seed_sd": null,
+    "image_ci_low": -0.28125,
+    "image_ci_high": 0.29726562499999787,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.03125
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.0385753060179843,
+    "seed_sd": 0.0028253278310926637,
+    "image_ci_low": -0.09875175247634765,
+    "image_ci_high": 0.023692027866176416,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.03657749754954359
+      },
+      {
+        "seed": 43,
+        "delta": -0.040573114486425
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.004667562825488858,
+    "seed_sd": 0.0019387399055569576,
+    "image_ci_low": -0.010699394922994543,
+    "image_ci_high": 0.001336659752269038,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.0060384589596651495
+      },
+      {
+        "seed": 43,
+        "delta": -0.0032966666913125664
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.2517580238771645,
+    "seed_sd": 0.0010569255090026137,
+    "image_ci_low": 0.223469831898787,
+    "image_ci_high": 0.2800181995738636,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.25101066468253974
+      },
+      {
+        "seed": 43,
+        "delta": 0.2525053830717893
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.015865120018591753,
+    "seed_sd": 0.0009680045675897514,
+    "image_ci_low": -0.030862366504823834,
+    "image_ci_high": -0.0008069304405511312,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.015180637424629488
+      },
+      {
+        "seed": 43,
+        "delta": -0.016549602612554018
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:image-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.46875,
+    "seed_sd": 0.2099223256647563,
+    "image_ci_low": -0.84375,
+    "image_ci_high": -0.125,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.6171875
+      },
+      {
+        "seed": 43,
+        "delta": -0.3203125
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.019210843870599917,
+    "seed_sd": null,
+    "image_ci_low": -0.11670197163259576,
+    "image_ci_high": 0.07427470959723212,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.019210843870599917
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.00027882575523108244,
+    "seed_sd": null,
+    "image_ci_low": -0.010764187725726515,
+    "image_ci_high": 0.010810268329805691,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.00027882575523108244
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.016474454365079362,
+    "seed_sd": null,
+    "image_ci_low": -0.053258308531746026,
+    "image_ci_high": 0.020431082589285672,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.016474454365079362
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.009315123266110906,
+    "seed_sd": null,
+    "image_ci_low": -0.03335212408096116,
+    "image_ci_high": 0.014022425962571777,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.009315123266110906
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:partial-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.5,
+    "seed_sd": null,
+    "image_ci_low": -1.21875,
+    "image_ci_high": 0.28125,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.5
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.06723903727515455,
+    "seed_sd": 0.006146944907990688,
+    "image_ci_low": -0.13792167725606785,
+    "image_ci_high": 0.0016281054143272376,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.06289249084713422
+      },
+      {
+        "seed": 43,
+        "delta": -0.07158558370317489
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.012701426894636825,
+    "seed_sd": 0.0014510789511015074,
+    "image_ci_low": -0.019390315832424676,
+    "image_ci_high": -0.006493479293567367,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.013727494660997763
+      },
+      {
+        "seed": 43,
+        "delta": -0.011675359128275886
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": 0.061428951907467534,
+    "seed_sd": 0.0059998732604484625,
+    "image_ci_low": 0.046757204790652054,
+    "image_ci_high": 0.07618482889723122,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.06567150297619048
+      },
+      {
+        "seed": 43,
+        "delta": 0.057186400838744586
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -0.016873653914015588,
+    "seed_sd": 7.715173458407767e-05,
+    "image_ci_low": -0.03224342272027897,
+    "image_ci_high": -0.0022314817146142445,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.016819099399310884
+      },
+      {
+        "seed": 43,
+        "delta": -0.016928208428720296
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:random-none",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 2,
+    "seeds": [
+      42,
+      43
+    ],
+    "mean_delta": -1.0390625,
+    "seed_sd": 0.2320194125768359,
+    "image_ci_low": -1.396533203125,
+    "image_ci_high": -0.697265625,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -1.203125
+      },
+      {
+        "seed": 43,
+        "delta": -0.875
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.06338995660930262,
+    "seed_sd": null,
+    "image_ci_low": -0.1887870167490004,
+    "image_ci_high": 0.0712497974313693,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.06338995660930262
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.008356281323358417,
+    "seed_sd": null,
+    "image_ci_low": -0.006432968802982941,
+    "image_ci_high": 0.02390331475180572,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.008356281323358417
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.11535690871628372,
+    "seed_sd": null,
+    "image_ci_low": 0.0610685841935842,
+    "image_ci_high": 0.1740379097898629,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.11535690871628372
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.004863623552674477,
+    "seed_sd": null,
+    "image_ci_low": -0.041681250841671104,
+    "image_ci_high": 0.032312434179068455,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.004863623552674477
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:rerank-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.140625,
+    "seed_sd": null,
+    "image_ci_low": -0.953515625,
+    "image_ci_high": 0.640625,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.140625
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.043238035841950795,
+    "seed_sd": null,
+    "image_ci_low": -0.16561478736965704,
+    "image_ci_high": 0.0807035434621934,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.043238035841950795
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "clipscore",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.01855118782259524,
+    "seed_sd": null,
+    "image_ci_low": 0.004318066901760176,
+    "image_ci_high": 0.03355213766917586,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.01855118782259524
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.11419270833333334,
+    "seed_sd": null,
+    "image_ci_low": 0.05998635912698413,
+    "image_ci_high": 0.1750054253472222,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.11419270833333334
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "token_f1",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": -0.011321533672219343,
+    "seed_sd": null,
+    "image_ci_low": -0.04637935509575355,
+    "image_ci_high": 0.023645802551722345,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": -0.011321533672219343
+      }
+    ]
+  },
+  {
+    "effect": "retrieval:text-image",
+    "cohort": {
+      "sampling": "random",
+      "count": 128,
+      "scope": "language",
+      "budget": "epochs",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "diagnostic_subset"
+    },
+    "metric": "words",
+    "n_images": 64,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ],
+    "mean_delta": 0.0,
+    "seed_sd": null,
+    "image_ci_low": -0.84375,
+    "image_ci_high": 0.8285156249999979,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": 42,
+        "delta": 0.0
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:adaptive-image",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.008420718934847221,
+    "seed_sd": null,
+    "image_ci_low": -0.04680381742798229,
+    "image_ci_high": 0.027340693136556165,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.008420718934847221
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:adaptive-image",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": 0.0007099765934981406,
+    "seed_sd": null,
+    "image_ci_low": -0.0031992993608582765,
+    "image_ci_high": 0.0047258127742679755,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": 0.0007099765934981406
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:adaptive-image",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.03052529068154068,
+    "seed_sd": null,
+    "image_ci_low": -0.04154389637055653,
+    "image_ci_high": -0.020308013926178,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.03052529068154068
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:adaptive-image",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": 0.004008872108827797,
+    "seed_sd": null,
+    "image_ci_low": -0.004059837245642795,
+    "image_ci_high": 0.012691303484462823,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": 0.004008872108827797
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:adaptive-image",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": 0.1484375,
+    "seed_sd": null,
+    "image_ci_low": -0.203125,
+    "image_ci_high": 0.5353515624999989,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": 0.1484375
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:adaptive-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.015089156956695639,
+    "seed_sd": null,
+    "image_ci_low": -0.060887562293790366,
+    "image_ci_high": 0.03330797160430798,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.015089156956695639
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:adaptive-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": 3.723907866515219e-05,
+    "seed_sd": null,
+    "image_ci_low": -0.005071412397228414,
+    "image_ci_high": 0.004630128201824846,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": 3.723907866515219e-05
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:adaptive-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": 0.16155349259094665,
+    "seed_sd": null,
+    "image_ci_low": 0.14004846390588577,
+    "image_ci_high": 0.183169971272855,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": 0.16155349259094665
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:adaptive-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.002391718706237318,
+    "seed_sd": null,
+    "image_ci_low": -0.015587763563307346,
+    "image_ci_high": 0.009847020691640847,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.002391718706237318
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:adaptive-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.34765625,
+    "seed_sd": null,
+    "image_ci_low": -0.8751953125,
+    "image_ci_high": 0.13291015624999947,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.34765625
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:image-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.006668438021848425,
+    "seed_sd": null,
+    "image_ci_low": -0.06321404946376806,
+    "image_ci_high": 0.0529873790542038,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.006668438021848425
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:image-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.0006727375148329884,
+    "seed_sd": null,
+    "image_ci_low": -0.00692156505829189,
+    "image_ci_high": 0.005395299733208956,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.0006727375148329884
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:image-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": 0.1920787832724873,
+    "seed_sd": null,
+    "image_ci_low": 0.1709567254704548,
+    "image_ci_high": 0.21351544929870986,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": 0.1920787832724873
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:image-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.006400590815065115,
+    "seed_sd": null,
+    "image_ci_low": -0.021763665892475918,
+    "image_ci_high": 0.008425332695680236,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.006400590815065115
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:image-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.49609375,
+    "seed_sd": null,
+    "image_ci_low": -1.140625,
+    "image_ci_high": 0.08984375,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.49609375
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:random-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "cider_d_fixed_df",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.022440577603729403,
+    "seed_sd": null,
+    "image_ci_low": -0.08306122202433099,
+    "image_ci_high": 0.03783197554165892,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.022440577603729403
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:random-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "clipscore",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.0034381053410470486,
+    "seed_sd": null,
+    "image_ci_low": -0.010255160770611838,
+    "image_ci_high": 0.0030064734091865782,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.0034381053410470486
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:random-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "context_copy_rate",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": 0.043696558879233516,
+    "seed_sd": null,
+    "image_ci_low": 0.03342034404907797,
+    "image_ci_high": 0.05451405664360914,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": 0.043696558879233516
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:random-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "token_f1",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": -0.010016339001677983,
+    "seed_sd": null,
+    "image_ci_low": -0.02524906382794567,
+    "image_ci_high": 0.004290578011266475,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": -0.010016339001677983
+      }
+    ]
+  },
+  {
+    "effect": "zero_shot:random-none",
+    "cohort": {
+      "sampling": "none",
+      "count": 0,
+      "scope": "none",
+      "budget": "none",
+      "split": "test",
+      "bank": "full",
+      "analysis_subset": "confirmation"
+    },
+    "metric": "words",
+    "n_images": 256,
+    "n_runs": 1,
+    "seeds": [
+      null
+    ],
+    "mean_delta": 0.0,
+    "seed_sd": null,
+    "image_ci_low": -0.68369140625,
+    "image_ci_high": 0.6839843749999979,
+    "image_ci_interpretation": "evaluation-image bootstrap after averaging the available fixed training runs; excludes training-seed uncertainty",
+    "per_seed": [
+      {
+        "seed": null,
+        "delta": 0.0
+      }
+    ]
+  }
+]

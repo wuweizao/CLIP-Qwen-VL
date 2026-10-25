@@ -1,0 +1,37 @@
+{
+  "summaries": [
+    {
+      "regime": "plain",
+      "n_images": 256,
+      "n_fixed_training_runs": 2,
+      "seeds": [
+        42,
+        43
+      ],
+      "pearson_r": 0.08465067542248877,
+      "interpretation": "descriptive association across test images; no p-value or causal interpretation; not used for gate/model selection"
+    },
+    {
+      "regime": "retrieval",
+      "n_images": 256,
+      "n_fixed_training_runs": 2,
+      "seeds": [
+        42,
+        43
+      ],
+      "pearson_r": 0.012190630783916892,
+      "interpretation": "descriptive association across test images; no p-value or causal interpretation; not used for gate/model selection"
+    },
+    {
+      "regime": "noise",
+      "n_images": 256,
+      "n_fixed_training_runs": 1,
+      "seeds": [
+        42
+      ],
+      "pearson_r": 0.001881272728739506,
+      "interpretation": "descriptive association across test images; no p-value or causal interpretation; not used for gate/model selection"
+    }
+  ],
+  "protocol": "Main random n128 language-epochs cohort only. Average available fixed-seed per-query differences, then summarize images. Equal-count quartiles break similarity ties by ID. Descriptive Pearson correlation; no p-value, causal claim, test-set threshold/model selection, or retrieval Recall claim."
+}

@@ -1,0 +1,5 @@
+{
+  "checked_unique_images": 128,
+  "exact_pixel_overlaps_with_training": [],
+  "scope": "Exact RGB-content hash only; not near-duplicate or pretraining contamination audit"
+}

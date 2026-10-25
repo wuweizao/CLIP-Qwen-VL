@@ -1,0 +1,26 @@
+{
+  "package_status": "ready",
+  "human_scoring_completed": false,
+  "caption_items_ready": 96,
+  "caption_items_scored": 0,
+  "caption_items_unscored": 96,
+  "relevance_items_ready": 64,
+  "relevance_items_scored": 0,
+  "relevance_items_unscored": 64,
+  "missing_materials": [],
+  "local_files": [
+    "review.html",
+    "blind_scores.csv",
+    "relevance_review.html",
+    "relevance_scores.csv"
+  ],
+  "instructions": [
+    "Open the ignored outputs human_review folder locally; images are not distributed in public reports.",
+    "Score captions while viewing the actual image, without opening mapping.json or model identities.",
+    "Caption scores are integers 0,1,2; use both factual_correctness and detail_coverage columns.",
+    "Relevance labels are relevant, partial, or irrelevant; leave uncertain items blank and add a note.",
+    "Import edited CSV files explicitly. Blank templates and automatic metrics are not human judgments.",
+    "Human-provided CSV provenance is recorded but annotator identity is not independently authenticated."
+  ],
+  "automatic_fact_labels_created": false
+}

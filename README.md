@@ -18,6 +18,22 @@
 
 ![实验比较](reports/comparison.png)
 
+## 第二阶段：检索干扰与鲁棒性研究
+
+新的研究流程位于 `configs/research.json` 与 `scripts/run_research.py`。它保留上面的第一阶段结果，独立建立 1024 图像训练池、128 图像验证集与排除旧 64 图像后的 512 图像测试集。
+
+主对比固定 128 图像适配预算、每图 1 条人工描述、2 轮、三个训练种子；前 256 张新测试图像用于预先固定的确认评估，64 张诊断子集用于部分相关/合成冲突/图片打乱等干预。独立扩展包括采样策略、等步数对比、1024 图像规模和连接模块适配。完整方案见 [预先固定的协议](reports/research_v2/protocol.md)，只将实际完成的结果列入 [第二阶段报告](reports/research_v2/results.md)。
+
+```powershell
+python scripts/prepare_research_data.py --config configs/research.json
+python scripts/prepare_benchmarks.py --config configs/research.json
+python scripts/run_research.py --phase all
+```
+
+运行器逐项记录状态并支持相同配置断点继续；改变配置、数据或上下文后会拒绝复用不匹配的结果。也可使用 `--phase core` / `--phase aux` 分别运行主实验和扩展。第二阶段的 adapter、预测、运行日志和人工材料仍保存在被 Git 忽略的 `outputs/research_v2/`。
+
+完成自动实验后，人工盲评材料在 `outputs/research_v2/human_review/`；人工填写后使用 `python scripts/research.py import-human --scores <实际填写的CSV路径>` 导入。空白模板不能导入，也不会被视为人工结果。CIDEr/CIDEr-D 使用固定训练参考文档频率与 regex 分词的明确变体，不直接与 COCO 排行榜比较；CLIPScore、词汇覆盖和上下文复制率均作为辅助证据。
+
 ## 方法与数据
 
 - 数据：[jxie/flickr8k](https://huggingface.co/datasets/jxie/flickr8k)，沿用公开 train/validation/test 划分，固定种子 42 抽取 128/32/64 张图像。流式 shuffle 使用 1024 条缓冲区，因此不是全量均匀抽样。

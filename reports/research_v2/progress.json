@@ -1,0 +1,308 @@
+{
+  "study_id": "research_v2_20261025",
+  "completed_evaluations": 57,
+  "completed_core_conditions": 20,
+  "expected_core_conditions": 36,
+  "core_status": "partial",
+  "human_evaluation": "pending_external_human_annotations_not_inferred",
+  "completed_adapters": 5,
+  "core_matrix": [
+    {
+      "model": "plain_s42_random_n128_language_epochs",
+      "mode": "none",
+      "status": "completed"
+    },
+    {
+      "model": "plain_s42_random_n128_language_epochs",
+      "mode": "random",
+      "status": "completed"
+    },
+    {
+      "model": "plain_s42_random_n128_language_epochs",
+      "mode": "image",
+      "status": "completed"
+    },
+    {
+      "model": "plain_s42_random_n128_language_epochs",
+      "mode": "adaptive",
+      "status": "completed"
+    },
+    {
+      "model": "plain_s43_random_n128_language_epochs",
+      "mode": "none",
+      "status": "completed"
+    },
+    {
+      "model": "plain_s43_random_n128_language_epochs",
+      "mode": "random",
+      "status": "completed"
+    },
+    {
+      "model": "plain_s43_random_n128_language_epochs",
+      "mode": "image",
+      "status": "completed"
+    },
+    {
+      "model": "plain_s43_random_n128_language_epochs",
+      "mode": "adaptive",
+      "status": "completed"
+    },
+    {
+      "model": "plain_s44_random_n128_language_epochs",
+      "mode": "none",
+      "status": "pending"
+    },
+    {
+      "model": "plain_s44_random_n128_language_epochs",
+      "mode": "random",
+      "status": "pending"
+    },
+    {
+      "model": "plain_s44_random_n128_language_epochs",
+      "mode": "image",
+      "status": "pending"
+    },
+    {
+      "model": "plain_s44_random_n128_language_epochs",
+      "mode": "adaptive",
+      "status": "pending"
+    },
+    {
+      "model": "retrieval_s42_random_n128_language_epochs",
+      "mode": "none",
+      "status": "completed"
+    },
+    {
+      "model": "retrieval_s42_random_n128_language_epochs",
+      "mode": "random",
+      "status": "completed"
+    },
+    {
+      "model": "retrieval_s42_random_n128_language_epochs",
+      "mode": "image",
+      "status": "completed"
+    },
+    {
+      "model": "retrieval_s42_random_n128_language_epochs",
+      "mode": "adaptive",
+      "status": "completed"
+    },
+    {
+      "model": "retrieval_s43_random_n128_language_epochs",
+      "mode": "none",
+      "status": "completed"
+    },
+    {
+      "model": "retrieval_s43_random_n128_language_epochs",
+      "mode": "random",
+      "status": "completed"
+    },
+    {
+      "model": "retrieval_s43_random_n128_language_epochs",
+      "mode": "image",
+      "status": "completed"
+    },
+    {
+      "model": "retrieval_s43_random_n128_language_epochs",
+      "mode": "adaptive",
+      "status": "completed"
+    },
+    {
+      "model": "retrieval_s44_random_n128_language_epochs",
+      "mode": "none",
+      "status": "pending"
+    },
+    {
+      "model": "retrieval_s44_random_n128_language_epochs",
+      "mode": "random",
+      "status": "pending"
+    },
+    {
+      "model": "retrieval_s44_random_n128_language_epochs",
+      "mode": "image",
+      "status": "pending"
+    },
+    {
+      "model": "retrieval_s44_random_n128_language_epochs",
+      "mode": "adaptive",
+      "status": "pending"
+    },
+    {
+      "model": "noise_s42_random_n128_language_epochs",
+      "mode": "none",
+      "status": "completed"
+    },
+    {
+      "model": "noise_s42_random_n128_language_epochs",
+      "mode": "random",
+      "status": "completed"
+    },
+    {
+      "model": "noise_s42_random_n128_language_epochs",
+      "mode": "image",
+      "status": "completed"
+    },
+    {
+      "model": "noise_s42_random_n128_language_epochs",
+      "mode": "adaptive",
+      "status": "completed"
+    },
+    {
+      "model": "noise_s43_random_n128_language_epochs",
+      "mode": "none",
+      "status": "pending"
+    },
+    {
+      "model": "noise_s43_random_n128_language_epochs",
+      "mode": "random",
+      "status": "pending"
+    },
+    {
+      "model": "noise_s43_random_n128_language_epochs",
+      "mode": "image",
+      "status": "pending"
+    },
+    {
+      "model": "noise_s43_random_n128_language_epochs",
+      "mode": "adaptive",
+      "status": "pending"
+    },
+    {
+      "model": "noise_s44_random_n128_language_epochs",
+      "mode": "none",
+      "status": "pending"
+    },
+    {
+      "model": "noise_s44_random_n128_language_epochs",
+      "mode": "random",
+      "status": "pending"
+    },
+    {
+      "model": "noise_s44_random_n128_language_epochs",
+      "mode": "image",
+      "status": "pending"
+    },
+    {
+      "model": "noise_s44_random_n128_language_epochs",
+      "mode": "adaptive",
+      "status": "pending"
+    }
+  ],
+  "data_source": {
+    "schema_version": 2,
+    "definition": {
+      "snapshot": {
+        "dataset": "jxie/flickr8k",
+        "revision": "56f58c967835f7c508d684f36bd7897cca9d7634"
+      },
+      "seed": 42,
+      "shuffle_buffer": 1024,
+      "requested_counts": {
+        "train": 1024,
+        "validation": 128,
+        "test": 512
+      },
+      "captions_per_train_image": 1,
+      "original_test_manifest_sha256": "1a441add6a827b808778dd77742aea51a2575078d76143bc08c24dcf428df417"
+    },
+    "dataset": "jxie/flickr8k",
+    "revision": "56f58c967835f7c508d684f36bd7897cca9d7634",
+    "snapshot": {
+      "dataset": "jxie/flickr8k",
+      "revision": "56f58c967835f7c508d684f36bd7897cca9d7634"
+    },
+    "seed": 42,
+    "counts": {
+      "train": 1024,
+      "validation": 128,
+      "test": 512,
+      "exploration": 64,
+      "instructions": 1024
+    },
+    "original_test_exclusion": {
+      "count": 64,
+      "ids": [
+        "00648c16b14a251ce1bbe14182af411ca0964b2b3f9a1df1da23803625a3382d",
+        "01ebd7b2d4af34f882afe0fd49b422edd1a36b3a434f3904f1447115bdc5404a",
+        "03cc6e8b47852f98eb736fc664109f10fdb0b8dceea94b97f5916b8106149e6d",
+        "0527bb1222e61dd5c2af569ae0d2b8f1ae25cacf71cb5973f40ddbb3aa7d9fb2",
+        "080b9fc1f589de248a401ada49bbfbb95ea5ec281d77b1dd8ce20621edc012e9",
+        "0d7efa0102a56e819d7ed8d6d3d23577fb47a389d17375cbd1e5d0c2bf76eb82",
+        "0fcef8c6f1274c2431c601ec66ae8e4d212f63c55445402c5e1bc55adf6be73f",
+        "11fec43a4ab7f906f67cc86549f738676b1150526cd3d613982d15f9a5386fc5",
+        "125d3f723abde18356221878169a4e301f528b69c75656930879b75a1626a6f9",
+        "180d62bfe69aef6005a4c77f710561edb58b58b8e6d0d0c8bd7d3c5bddb56528",
+        "196d288b854660b31215d912735520e2353ff9d61d5f64f2007264920d29c173",
+        "1f62908c7fde37a6771a1015097d05f4ef973b5355e0693971a21189012d8bba",
+        "209188fe6a24f64b829d567d6a3f18a065cbf355a2d24c89963ef9924f595fed",
+        "26cc1c7bf7c166b9deaecf33046882880ef48a2e187189c810cd359ac9aad897",
+        "27aada78748b555c275bec58b5d436110b29d6b7c99c2b1534dcae5d1fcfcbab",
+        "2d0e88d70dfbc56855cfd566f5061c83e23a97750a1c3739514973ae859e0c99",
+        "3a3f3d562ba5aac687223db2e05ae16c09fdbdffec9ecbc2abd620f84712cdd4",
+        "3ddf3db603ba476ef7e508255c9e09f451b548cfbed49d089a82ceb7cbf392c0",
+        "3dec5f46504b64e25436cb56a07f1364cf47f7fd8a871a8e2d85f9e394112b63",
+        "3f796644423f1b9d3e8f3b91240a6acef17db1a43b850d1cd644d36c60a8e090",
+        "40b42a7dc70f16949869005c67d0d043cb8c6fc4f92ad93c5505e60df851ec60",
+        "40ed783b2ec67a248b7f15a935c8694e7d3222db12dae9442e676aa32561d96a",
+        "43d901ee358716204a0dd2182f9153527d61a39c5573f72680e56c98ef675d60",
+        "4646b716bbf687f40ade33264d60c458465c03ee16014b28f3d1897e59107ead",
+        "49c16124bfb8b07692b150870a4b60a3d9adddffd33881d53052cca08653be41",
+        "50fd6ef20b52f4eee81ba89f2d4a43ba65fe15bac1433b307a28538d88203b17",
+        "57dfa9ee2d999862db9ea6b1347050a26a661fd2c76954042293a9a8048f6904",
+        "582102cc1996e57f6513ab87f6547d1c756d018abc413ab6fc45c6dfa1597b8c",
+        "58d98f3a2880db6748b086f598e67c6c2581815a34b575f6a4d2ef253fc65382",
+        "5d13fcff520071a56bbd3f964b5770020fb46aa8aba22d710954d6339cbf3c19",
+        "5d5aff7ac0960dd41027f69551deb2eac32dc1ed4bf639ba36a5bc9f26d6a601",
+        "62ad46c3246af6c7730a1d61d41ecd6e195477e2b681abc34fe61db5d3cfdfb7",
+        "6c0bcddabb2806b2223ad01242f53050aec18a99b96dbdee354d9798524cd59a",
+        "72857e336c5052802119be38fa700da7f789b004ff7f2eef975674547ecc919f",
+        "76e08a94bacb3bbde199c0124e5d27e4ff6d0ce11ce8ad0e13c0e2ce35c2f14e",
+        "7ab5cc87355691245ff38b69b426c254df90432b58aaeaf3594e7b42bacf48f6",
+        "7b2a17f636fbf29d314f12666fb7e7fc7cf7e70e7942848cba9b1ec878d3e580",
+        "7c7d3382ec3bf751f7bbe078ae808c4efca73cf93d47b81f169b79c27f043bf8",
+        "7d661f01814bc7d1cd91be46c8e696622a53bfac32803aa6046aaa1c9f874135",
+        "7ed4e80e96950b0fa13cf8c2fff839730061c0eac657f075cacb3511443a2a3f",
+        "85eb364e5ebaeba14d2dce5cbefee5afc216d1172d3f06ee6f3844e68b8140a7",
+        "8cd0db65140f46b21ac6d195ddd96d76e4ec902d9ddec64bdf5c10448a05f1f4",
+        "91b3e3b0b6dd08ca113182a0de991b2fd45e093b224ef8b1b673044527ac88bb",
+        "994044c25463c5125aeb5cd6032aba2f2849d442078e1b60fa700a7e1c35b068",
+        "9b8ba914673d8efa348051f00672b6b49cac229a5c54528ac8657c0e729c337e",
+        "9e703211fd5fcaebc8043ccf5eaef86a13f8c45afeaa524633b229865c00555d",
+        "a67cf900dc0c3e286457efb016576190a3d9fd88e0d2895b5e9c84adc3a24b36",
+        "b1d2718f3870f51a4402f1af4f5b40e8fdca8b45f3a167bfe24f005e4ba74485",
+        "b290fc8612610a6d79c153d26ecdcf10c037e3ca58f9cb999cf83e5bea97bd57",
+        "b679694adef4851e3cdbb8fbc013682176effcb9660e1a15f8e1e2fa9397526f",
+        "b723038cd139bcbca79bd47fb18fb62c920d3a42bdf0372a6287c0e062aee760",
+        "c37246992f785433e853fb0c489fb5a2d7e5ee5000629ca73455e5deb8a245b4",
+        "c3ff520b0f8655f97ef04e67129e3160ca73bfa0681f4c8646214ff57207c9e8",
+        "c955892d7af57269f3e04f99dc31e021d8598772625a465c1e46a08063536be5",
+        "c9737825e948694368e3c3e891824d3087b110c0a8c4b1fbeef55948cdf360cb",
+        "c9e7fd2057a0ff73223413e065c782f1363631c601ece234015d6891afc6389d",
+        "c9fc08caa9e28004c0ede2f20343a0980938a787d084b6a635d64bacd6de58fe",
+        "ca38a651acd5002e7243fc5cd5acbcc4d7c8c7871dc50e27e286ee4816bd0f66",
+        "cac1179821d057c77399525534a46143e3796c611209015cea855564754f8ed2",
+        "cdd5c28cf2b57754a949c95da6541bc78bbecdb1b9d87674edc726a3f30cceaf",
+        "d2be5847a650e1722422479676ed40131db87328af1567e978f0f57c67192b1b",
+        "d885deb81da54116027abb9fa6e7726d80c4716922e93174ee33184091201c87",
+        "f716f605f3ded110f165f1d5ae07fc8f12eb4dcf10a8f7de9c53df6801fc826f",
+        "fe3ea31114b50a72309f52f018776dacce0bc8724a2e26b81e18277c440826fe"
+      ],
+      "reason": "Previously evaluated images cannot enter confirmation evaluation."
+    },
+    "selection_uses_predictions": false,
+    "exact_duplicate_rejections": {
+      "train": 0,
+      "validation": 0,
+      "test": 64
+    },
+    "near_duplicate_policy": "dHash <= threshold flags only; not automatically removed or human verified",
+    "manifest_sha256": {
+      "train.jsonl": "ec1fa518bd1bc1d0b49815989c8aad6355b0dab6513f68776ef0e5626ffe0a53",
+      "validation.jsonl": "92e0f89cd814ce43b9d36aa793d2af7a35a82bfd74f1098e079073e159d5e193",
+      "test.jsonl": "420394e3b3fefe70afd4f0c97769a6461d027d90ce0434f48537af2f820b10d5",
+      "exploration.jsonl": "1ec3217cff63cddb4c7b4dea100653861cdddc8ed6826f73d3c11b52312619d9",
+      "instructions.jsonl": "d157fa650c41f5a8361e9ce8a62c0d97a0a8721e7cca443e637df836b578b42e",
+      "near_duplicate_audit.json": "3033b17a7977f9e0076f45561b19cb019ddbac2241068478e744e599abfd4dc7"
+    }
+  }
+}
