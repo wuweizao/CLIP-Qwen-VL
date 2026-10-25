@@ -1,0 +1,22 @@
+{
+  "images": 512,
+  "captions": 2560,
+  "image_to_text": {
+    "R@1": 0.79296875,
+    "R@5": 0.9453125,
+    "R@10": 0.978515625
+  },
+  "text_to_image": {
+    "R@1": 0.631640625,
+    "R@5": 0.884375,
+    "R@10": 0.9484375
+  },
+  "identity": {
+    "config_sha256": "09adf738160a0985353dd2b26ec3db4d33ac73ec4bf9bad02dbae32868048618",
+    "data_manifests": {
+      "train": "ec1fa518bd1bc1d0b49815989c8aad6355b0dab6513f68776ef0e5626ffe0a53",
+      "validation": "92e0f89cd814ce43b9d36aa793d2af7a35a82bfd74f1098e079073e159d5e193",
+      "test": "420394e3b3fefe70afd4f0c97769a6461d027d90ce0434f48537af2f820b10d5"
+    }
+  }
+}

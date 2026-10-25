@@ -1,11 +1,11 @@
 {
   "study_id": "research_v2_20261025",
-  "completed_evaluations": 57,
-  "completed_core_conditions": 20,
+  "completed_evaluations": 136,
+  "completed_core_conditions": 36,
   "expected_core_conditions": 36,
-  "core_status": "partial",
+  "core_status": "completed",
   "human_evaluation": "pending_external_human_annotations_not_inferred",
-  "completed_adapters": 5,
+  "completed_adapters": 24,
   "core_matrix": [
     {
       "model": "plain_s42_random_n128_language_epochs",
@@ -50,22 +50,22 @@
     {
       "model": "plain_s44_random_n128_language_epochs",
       "mode": "none",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "plain_s44_random_n128_language_epochs",
       "mode": "random",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "plain_s44_random_n128_language_epochs",
       "mode": "image",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "plain_s44_random_n128_language_epochs",
       "mode": "adaptive",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "retrieval_s42_random_n128_language_epochs",
@@ -110,22 +110,22 @@
     {
       "model": "retrieval_s44_random_n128_language_epochs",
       "mode": "none",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "retrieval_s44_random_n128_language_epochs",
       "mode": "random",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "retrieval_s44_random_n128_language_epochs",
       "mode": "image",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "retrieval_s44_random_n128_language_epochs",
       "mode": "adaptive",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "noise_s42_random_n128_language_epochs",
@@ -150,42 +150,42 @@
     {
       "model": "noise_s43_random_n128_language_epochs",
       "mode": "none",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "noise_s43_random_n128_language_epochs",
       "mode": "random",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "noise_s43_random_n128_language_epochs",
       "mode": "image",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "noise_s43_random_n128_language_epochs",
       "mode": "adaptive",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "noise_s44_random_n128_language_epochs",
       "mode": "none",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "noise_s44_random_n128_language_epochs",
       "mode": "random",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "noise_s44_random_n128_language_epochs",
       "mode": "image",
-      "status": "pending"
+      "status": "completed"
     },
     {
       "model": "noise_s44_random_n128_language_epochs",
       "mode": "adaptive",
-      "status": "pending"
+      "status": "completed"
     }
   ],
   "data_source": {

@@ -1,0 +1,1419 @@
+{
+  "status": "complete",
+  "definition": {
+    "seed": 20261025,
+    "sugar_per_type": 16,
+    "pope_questions_per_variant": 120,
+    "sugar_commit": "0047054b243992f0fad63d6f64f7544862daf846",
+    "pope_commit": "08d957b917e5a378a2f99d35b6293c536a66298b"
+  },
+  "sources": [
+    {
+      "repo": "RAIVNLab/sugar-crepe",
+      "commit": "0047054b243992f0fad63d6f64f7544862daf846",
+      "path": "data/add_att.json",
+      "url": "https://raw.githubusercontent.com/RAIVNLab/sugar-crepe/0047054b243992f0fad63d6f64f7544862daf846/data/add_att.json",
+      "git_blob_sha": "71c463725f3f9bae0a9227a01ae5d431db235396",
+      "sha256": "012d88d729693d193760e6f3393b06a1cf874380a9db0062e937201199fe044d",
+      "bytes": 158863
+    },
+    {
+      "repo": "RAIVNLab/sugar-crepe",
+      "commit": "0047054b243992f0fad63d6f64f7544862daf846",
+      "path": "data/add_obj.json",
+      "url": "https://raw.githubusercontent.com/RAIVNLab/sugar-crepe/0047054b243992f0fad63d6f64f7544862daf846/data/add_obj.json",
+      "git_blob_sha": "289b22a04690f6f542bb048346021d768ec9b24d",
+      "sha256": "1b9d76b93139a937b8dc1ada92a4f05ecc821bb3c291d752428bafadd4bb0682",
+      "bytes": 484593
+    },
+    {
+      "repo": "RAIVNLab/sugar-crepe",
+      "commit": "0047054b243992f0fad63d6f64f7544862daf846",
+      "path": "data/replace_att.json",
+      "url": "https://raw.githubusercontent.com/RAIVNLab/sugar-crepe/0047054b243992f0fad63d6f64f7544862daf846/data/replace_att.json",
+      "git_blob_sha": "6393e04971c06cb62a8fed62ef2805ff6c7c5666",
+      "sha256": "9fe55fd4c0a9ad1f85d486d9f6d0215b41f867eb025026e7f7b5ce44352545ee",
+      "bytes": 176843
+    },
+    {
+      "repo": "RAIVNLab/sugar-crepe",
+      "commit": "0047054b243992f0fad63d6f64f7544862daf846",
+      "path": "data/replace_obj.json",
+      "url": "https://raw.githubusercontent.com/RAIVNLab/sugar-crepe/0047054b243992f0fad63d6f64f7544862daf846/data/replace_obj.json",
+      "git_blob_sha": "1585a4a6998d785c043fb923d8e0248436d9da51",
+      "sha256": "9d299600639947e9d15281a9ded1382b376cf4ea088a8d08a1314bfe76e81898",
+      "bytes": 361126
+    },
+    {
+      "repo": "RAIVNLab/sugar-crepe",
+      "commit": "0047054b243992f0fad63d6f64f7544862daf846",
+      "path": "data/replace_rel.json",
+      "url": "https://raw.githubusercontent.com/RAIVNLab/sugar-crepe/0047054b243992f0fad63d6f64f7544862daf846/data/replace_rel.json",
+      "git_blob_sha": "8716359e17fa36d37e75c6eff5e94826cdb047e5",
+      "sha256": "356bcc2fc4c6aed3f4d9fd50acc58489bb1fe70c28791f9368d4cbf9ea39cdc9",
+      "bytes": 312629
+    },
+    {
+      "repo": "RAIVNLab/sugar-crepe",
+      "commit": "0047054b243992f0fad63d6f64f7544862daf846",
+      "path": "data/swap_att.json",
+      "url": "https://raw.githubusercontent.com/RAIVNLab/sugar-crepe/0047054b243992f0fad63d6f64f7544862daf846/data/swap_att.json",
+      "git_blob_sha": "375fdd6d372e22e43c0dfbe898c1ec1494016b8c",
+      "sha256": "7a7ce04e5c4c80412b48c6f0c1347fb1a2f5d54c0be6aa429b64d390e442f8d0",
+      "bytes": 154665
+    },
+    {
+      "repo": "RAIVNLab/sugar-crepe",
+      "commit": "0047054b243992f0fad63d6f64f7544862daf846",
+      "path": "data/swap_obj.json",
+      "url": "https://raw.githubusercontent.com/RAIVNLab/sugar-crepe/0047054b243992f0fad63d6f64f7544862daf846/data/swap_obj.json",
+      "git_blob_sha": "db5abe6b488fa38c4b67d1d3da87b6b5c2e1e626",
+      "sha256": "073cdb8e253d053614e80710834d9773b09dbc1dd0a412f6f9492262caa1dcad",
+      "bytes": 57569
+    },
+    {
+      "repo": "AoiDragon/POPE",
+      "commit": "08d957b917e5a378a2f99d35b6293c536a66298b",
+      "path": "output/coco/coco_pope_random.json",
+      "url": "https://raw.githubusercontent.com/AoiDragon/POPE/08d957b917e5a378a2f99d35b6293c536a66298b/output/coco/coco_pope_random.json",
+      "git_blob_sha": "cd2b137f786675decb7442675929885125eeb083",
+      "sha256": "ac25245170b975a5bdf9080b23fd431dfe6be458bc038259c1f4f09a6bef7994",
+      "bytes": 368166
+    },
+    {
+      "repo": "AoiDragon/POPE",
+      "commit": "08d957b917e5a378a2f99d35b6293c536a66298b",
+      "path": "output/coco/coco_pope_popular.json",
+      "url": "https://raw.githubusercontent.com/AoiDragon/POPE/08d957b917e5a378a2f99d35b6293c536a66298b/output/coco/coco_pope_popular.json",
+      "git_blob_sha": "eecb09ee9c68becd95e6b18d48433ec68cc261b1",
+      "sha256": "72c1a8ad45d0c13514f5f22598261df41d3b533854d29682e924db50ed8aa753",
+      "bytes": 370190
+    },
+    {
+      "repo": "AoiDragon/POPE",
+      "commit": "08d957b917e5a378a2f99d35b6293c536a66298b",
+      "path": "output/coco/coco_pope_adversarial.json",
+      "url": "https://raw.githubusercontent.com/AoiDragon/POPE/08d957b917e5a378a2f99d35b6293c536a66298b/output/coco/coco_pope_adversarial.json",
+      "git_blob_sha": "4eb7fc57596b955756a94bc63d1f967c2afb692a",
+      "sha256": "420b3407db1fa9f1187a805dca41cb7b97fd91504e6c2179706188c107fb8ef8",
+      "bytes": 370401
+    }
+  ],
+  "download_failures": [],
+  "source_tree_urls": [
+    "https://api.github.com/repos/RAIVNLab/sugar-crepe/git/trees/0047054b243992f0fad63d6f64f7544862daf846?recursive=1",
+    "https://api.github.com/repos/AoiDragon/POPE/git/trees/08d957b917e5a378a2f99d35b6293c536a66298b?recursive=1"
+  ],
+  "requested_image_count": 128,
+  "counts": {
+    "sugarcrepe": 112,
+    "pope": 360,
+    "transfer": 108
+  },
+  "pope_variant_label_counts": {
+    "random": {
+      "yes": 60,
+      "no": 60
+    },
+    "popular": {
+      "yes": 60,
+      "no": 60
+    },
+    "adversarial": {
+      "yes": 60,
+      "no": 60
+    }
+  },
+  "selection": {
+    "sugarcrepe": "Seeded uniform subset within each of seven official categories",
+    "pope": "Same seeded 20 image groups across all variants at default size; all original six questions per image retained",
+    "transfer": "Unique SugarCrepe subset images and benchmark-positive captions; benchmark-conditioned, not representative COCO"
+  },
+  "images": [
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000017379.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000017379.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000017379.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000017379.jpg"
+      ],
+      "sha256": "52b592adcb73170d7d07994a8781e92feddf3c7f1c45173a050c7ecfe12e7743",
+      "bytes": 179753
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000075591.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000075591.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000075591.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000075591.jpg"
+      ],
+      "sha256": "b902c03f6b7794b4e14c836cec0a9e419cf21549b168a0c512dfaaf197e32070",
+      "bytes": 244419
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000097994.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000097994.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000097994.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000097994.jpg"
+      ],
+      "sha256": "bcc6c62fe3750227cd9cb23a1ed86c148f648c6ef825e26434c971880a2ae711",
+      "bytes": 140575
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000209755.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000209755.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000209755.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000209755.jpg"
+      ],
+      "sha256": "6309f55168112a5949d5fa76fa563367cb9b787b41c8a6909068bc6a76c79f1a",
+      "bytes": 237183
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000218224.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000218224.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000218224.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000218224.jpg"
+      ],
+      "sha256": "b1e3ced678d6dacd06831b8fa3127e9e458a8b5285c5eeb6ee17ae1f8c035e2e",
+      "bytes": 107206
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000245448.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000245448.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000245448.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000245448.jpg"
+      ],
+      "sha256": "fb9fc13da201d2523fe43f36bcb2cbd474d6c0d03aed9f1f7d1768964f6bb4bb",
+      "bytes": 208430
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000246928.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000246928.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000246928.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000246928.jpg"
+      ],
+      "sha256": "438c45b0a717f14a67c00d0f91704c53f202be75170fe1f3491da73432543c22",
+      "bytes": 106637
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000279499.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000279499.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000279499.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000279499.jpg"
+      ],
+      "sha256": "f9aa6b736b3cfd9610b867492496bd14423253c4f3fb98c5141d763f22bc739e",
+      "bytes": 158770
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000280734.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000280734.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000280734.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000280734.jpg"
+      ],
+      "sha256": "eec54fb118937ddf9d50dad10d2dc926b791772833cd990cbd1ef1c8bb3d437f",
+      "bytes": 182343
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000309371.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000309371.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000309371.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000309371.jpg"
+      ],
+      "sha256": "820d46566e00c5640a1f1cca00ea0741cd1249c8bf41a03c16b7cd20268829f2",
+      "bytes": 236920
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000323752.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000323752.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000323752.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000323752.jpg"
+      ],
+      "sha256": "957c9538f557f42b5dec8a7d0fb076fed9cc2faa8449f206c07bfd5dc14c0826",
+      "bytes": 147768
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000327038.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000327038.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000327038.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000327038.jpg"
+      ],
+      "sha256": "c06ca0108646c1a3d195e863939b496513715891f251c97cfaa29f1ad7f16b4a",
+      "bytes": 165620
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000354229.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000354229.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000354229.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000354229.jpg"
+      ],
+      "sha256": "b67493757590ad87248db6392361315c91d5cb10f45ad47b985bd2465bb73985",
+      "bytes": 231178
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000377352.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000377352.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000377352.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000377352.jpg"
+      ],
+      "sha256": "a0009187a7a20fae6bebf66d83fceb40c5a6283873573a31fb980aa79d5879f3",
+      "bytes": 205209
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000381895.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000381895.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000381895.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000381895.jpg"
+      ],
+      "sha256": "7be31f9fb0b46174fd7c0a4b102da52b4eafce4de016bc44a79dfcd8771e72da",
+      "bytes": 133386
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000384040.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000384040.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000384040.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000384040.jpg"
+      ],
+      "sha256": "2a0e36ab61b323d0fa23fb4e82ddebb9296291904c1f6947b21627ffc46fd59d",
+      "bytes": 171061
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000391735.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000391735.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000391735.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000391735.jpg"
+      ],
+      "sha256": "3f9bc9bb671a0cea3e0a30f76336782798b5da4fd473337c62e8bee5cc0013f2",
+      "bytes": 214534
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000433574.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000433574.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000433574.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000433574.jpg"
+      ],
+      "sha256": "c89f2804834a12657de388aed07ce7814aa5568685733e339b3a86d33335849c",
+      "bytes": 222724
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000441156.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000441156.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000441156.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000441156.jpg"
+      ],
+      "sha256": "d184a72d816658dcba8f9654efdab923de0a301420b33b31a84a978fff912867",
+      "bytes": 254610
+    },
+    {
+      "image": "data/benchmark_images/val2014/COCO_val2014_000000579277.jpg",
+      "url": "http://images.cocodataset.org/val2014/COCO_val2014_000000579277.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2014/COCO_val2014_000000579277.jpg",
+        "http://images.cocodataset.org/val2014/COCO_val2014_000000579277.jpg"
+      ],
+      "sha256": "050c1563c06584e6050e51fd12562aacd729f5388f86251bc8f0a45cd7f019c0",
+      "bytes": 160904
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000001000.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000001000.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000001000.jpg",
+        "http://images.cocodataset.org/val2017/000000001000.jpg"
+      ],
+      "sha256": "24bb77a31928404e45a0454b06f6a0bd54a8db103590c9d7917288a1e0269f05",
+      "bytes": 321136
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000001761.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000001761.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000001761.jpg",
+        "http://images.cocodataset.org/val2017/000000001761.jpg"
+      ],
+      "sha256": "c06b1845c54bb886a8fb9f8a6e908b29ceb661ffda1ca8df9a27f123806de648",
+      "bytes": 115835
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000004495.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000004495.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000004495.jpg",
+        "http://images.cocodataset.org/val2017/000000004495.jpg"
+      ],
+      "sha256": "cf670ca35fb16e59ecce82eecf9bf1f60d2ee333be81b61c4ea390be2c7e7b2b",
+      "bytes": 106634
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000005060.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000005060.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000005060.jpg",
+        "http://images.cocodataset.org/val2017/000000005060.jpg"
+      ],
+      "sha256": "5d3d8315695f7c718b649c06afe32c792bcce9d4a97f544fc1ba19bc592d8cd3",
+      "bytes": 157329
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000005529.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000005529.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000005529.jpg",
+        "http://images.cocodataset.org/val2017/000000005529.jpg"
+      ],
+      "sha256": "e06b55bf935e76ac31cd8b8a56a3978e2f552d7c967ff8a0b8d0ae3b3445db0e",
+      "bytes": 224797
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000008021.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000008021.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000008021.jpg",
+        "http://images.cocodataset.org/val2017/000000008021.jpg"
+      ],
+      "sha256": "235537407867a7b894e78b3aecb55b33b14b64cbb23ca376a00d34c62a1a63a6",
+      "bytes": 180088
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000009483.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000009483.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000009483.jpg",
+        "http://images.cocodataset.org/val2017/000000009483.jpg"
+      ],
+      "sha256": "c7e6e15f4db067c3e09ab8605759be9d850e2d5c45ea4dfb9cda8f5d85308ea4",
+      "bytes": 116766
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000009769.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000009769.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000009769.jpg",
+        "http://images.cocodataset.org/val2017/000000009769.jpg"
+      ],
+      "sha256": "f5e6d63081ba8fbb2a59770144d7c2350de6a1a8288e15565df7dd1bd87d85bf",
+      "bytes": 327350
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000011813.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000011813.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000011813.jpg",
+        "http://images.cocodataset.org/val2017/000000011813.jpg"
+      ],
+      "sha256": "a7387846c67b6900e02eeca0b3fdddfde24d44e336950f38ee2b54a91d5874be",
+      "bytes": 74788
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000016228.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000016228.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000016228.jpg",
+        "http://images.cocodataset.org/val2017/000000016228.jpg"
+      ],
+      "sha256": "b34d80f1f13989eb0c7031f95373a9e26c698397cb9511b422dcf5daba60110e",
+      "bytes": 187603
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000025393.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000025393.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000025393.jpg",
+        "http://images.cocodataset.org/val2017/000000025393.jpg"
+      ],
+      "sha256": "677e993476aed8ceca9bd9b8edbeb3c8874ed19488c9050cb8b55057a5f1547a",
+      "bytes": 142045
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000030675.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000030675.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000030675.jpg",
+        "http://images.cocodataset.org/val2017/000000030675.jpg"
+      ],
+      "sha256": "66c6259b826b869e0d2dba078a0de6d9c82617843c2d5448e9b34566bab6f979",
+      "bytes": 213529
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000039551.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000039551.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000039551.jpg",
+        "http://images.cocodataset.org/val2017/000000039551.jpg"
+      ],
+      "sha256": "4c84a652af01f02005d2116c351bdadcb1b82445c2fae9cd47adaccf6470a136",
+      "bytes": 153990
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000042276.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000042276.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000042276.jpg",
+        "http://images.cocodataset.org/val2017/000000042276.jpg"
+      ],
+      "sha256": "756af170de5d32112b9c0cf5af399dc4dd19a2c455e4d352c3c60577d1ebe3a6",
+      "bytes": 131912
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000043314.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000043314.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000043314.jpg",
+        "http://images.cocodataset.org/val2017/000000043314.jpg"
+      ],
+      "sha256": "360eceae3e66803c8e19bf9a45b9498f0d4f6153ae2d6f832cbbdaeb899e393f",
+      "bytes": 140124
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000044699.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000044699.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000044699.jpg",
+        "http://images.cocodataset.org/val2017/000000044699.jpg"
+      ],
+      "sha256": "24c2eef8c2c8929f3b2032f30fc89c0894c6f1a375d6ae016e3ade301a625165",
+      "bytes": 226868
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000066523.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000066523.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000066523.jpg",
+        "http://images.cocodataset.org/val2017/000000066523.jpg"
+      ],
+      "sha256": "49adf223db2be0c58fd0fcd78f8ba77c004b2a4d9ee399e1788f5257d21c1063",
+      "bytes": 93376
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000078420.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000078420.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000078420.jpg",
+        "http://images.cocodataset.org/val2017/000000078420.jpg"
+      ],
+      "sha256": "a49443248bc7573d98d75a71129ca4ecaefbe62bc134bacecb9695cd05eecc9d",
+      "bytes": 110381
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000080671.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000080671.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000080671.jpg",
+        "http://images.cocodataset.org/val2017/000000080671.jpg"
+      ],
+      "sha256": "4f8723a042a40503cf9dad690214f8b770eebfa16b474430baa592965d57d917",
+      "bytes": 102317
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000082180.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000082180.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000082180.jpg",
+        "http://images.cocodataset.org/val2017/000000082180.jpg"
+      ],
+      "sha256": "b32a8e7ae788960ee14000bb2e77bf35a43714ec8f0279e98e5af9d078f0fb0b",
+      "bytes": 202421
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000083113.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000083113.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000083113.jpg",
+        "http://images.cocodataset.org/val2017/000000083113.jpg"
+      ],
+      "sha256": "7b1ee2a4a38edc0247d08f645a4c65ed3184a9035198e5e0b4f00e735aa807b0",
+      "bytes": 286975
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000087470.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000087470.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000087470.jpg",
+        "http://images.cocodataset.org/val2017/000000087470.jpg"
+      ],
+      "sha256": "813249b022ac9a945404f6ff101afe450fd3c34815b9118e99a31bed63a65a37",
+      "bytes": 243842
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000090108.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000090108.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000090108.jpg",
+        "http://images.cocodataset.org/val2017/000000090108.jpg"
+      ],
+      "sha256": "3a9a862c237d03ab32d8b455de68ffcd4fd094f2ddd4355b95048243f59a781a",
+      "bytes": 148683
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000093437.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000093437.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000093437.jpg",
+        "http://images.cocodataset.org/val2017/000000093437.jpg"
+      ],
+      "sha256": "7c9c2698d8cb9f2d424196cd29bed724d7f9aa9fb0e46dc152b598c94861a4ea",
+      "bytes": 108078
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000106757.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000106757.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000106757.jpg",
+        "http://images.cocodataset.org/val2017/000000106757.jpg"
+      ],
+      "sha256": "3638552bcd5b55fbbd710dbef5cbc4cb142b375397d006104fc87350683d7ad7",
+      "bytes": 225995
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000122046.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000122046.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000122046.jpg",
+        "http://images.cocodataset.org/val2017/000000122046.jpg"
+      ],
+      "sha256": "4bd45688ba9e814bcb787e71c389f971aa4b99ad2ff621361054d880ce4a7947",
+      "bytes": 227293
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000134886.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000134886.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000134886.jpg",
+        "http://images.cocodataset.org/val2017/000000134886.jpg"
+      ],
+      "sha256": "a3eb8a72558bd091480d96592617432c273da3842462cc2bf04d65f0bd721f71",
+      "bytes": 112044
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000138819.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000138819.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000138819.jpg",
+        "http://images.cocodataset.org/val2017/000000138819.jpg"
+      ],
+      "sha256": "9af2254f27aa3dee46b1f91e2212b4e81931573d018aa672413e0d35a408126a",
+      "bytes": 112265
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000142092.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000142092.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000142092.jpg",
+        "http://images.cocodataset.org/val2017/000000142092.jpg"
+      ],
+      "sha256": "4fb3b673ad3aa73c3ee1d95367f6e8158c17afd203099e1ec9b40f42532275f4",
+      "bytes": 226860
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000154425.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000154425.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000154425.jpg",
+        "http://images.cocodataset.org/val2017/000000154425.jpg"
+      ],
+      "sha256": "e66bcb0a5225afa4b9b984c3673a94b632655c1ef0cbcffea756515452667bea",
+      "bytes": 131679
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000159458.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000159458.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000159458.jpg",
+        "http://images.cocodataset.org/val2017/000000159458.jpg"
+      ],
+      "sha256": "04b7ce54c0d1ec0a231fe79e542b08b0cc973273f3a91ae479be546825ce4a95",
+      "bytes": 222248
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000166166.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000166166.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000166166.jpg",
+        "http://images.cocodataset.org/val2017/000000166166.jpg"
+      ],
+      "sha256": "0a661b59e78b8dd84eccea6177f8a51888c5dbc48fe063c68c76c7300f998c85",
+      "bytes": 95057
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000173044.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000173044.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000173044.jpg",
+        "http://images.cocodataset.org/val2017/000000173044.jpg"
+      ],
+      "sha256": "5332fcd8c2d6ed543df9d52be771c16cfae16a391ded02a017c921cb4784c952",
+      "bytes": 168224
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000174371.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000174371.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000174371.jpg",
+        "http://images.cocodataset.org/val2017/000000174371.jpg"
+      ],
+      "sha256": "5730afc66d049a466066bd21efbb2f0f11ef00f9ba968c821c71378a53a56d77",
+      "bytes": 333122
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000184384.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000184384.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000184384.jpg",
+        "http://images.cocodataset.org/val2017/000000184384.jpg"
+      ],
+      "sha256": "ac94969d745f9dfc069f2762675f77dae48b1bdde7ccb673161f964f0e99e7eb",
+      "bytes": 121497
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000185890.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000185890.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000185890.jpg",
+        "http://images.cocodataset.org/val2017/000000185890.jpg"
+      ],
+      "sha256": "f2eca093fbcf84dc9d19ae25ea663cccfda23be04e0a805ad475121fd4e787a7",
+      "bytes": 173169
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000206411.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000206411.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000206411.jpg",
+        "http://images.cocodataset.org/val2017/000000206411.jpg"
+      ],
+      "sha256": "9f7306ef214c8f98125132dac3530e97792a8b044e454d44beefd9cbddda78ae",
+      "bytes": 76546
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000218439.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000218439.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000218439.jpg",
+        "http://images.cocodataset.org/val2017/000000218439.jpg"
+      ],
+      "sha256": "4dc627bd0f89b6a15f75840169984fd04e2205dd416a1bf9d32666b3086067e7",
+      "bytes": 157284
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000231339.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000231339.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000231339.jpg",
+        "http://images.cocodataset.org/val2017/000000231339.jpg"
+      ],
+      "sha256": "c1512cc65ba365778c4064c2f22798db1fccd96f127aeff2cdc0bb09ed1e6dc7",
+      "bytes": 121429
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000235836.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000235836.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000235836.jpg",
+        "http://images.cocodataset.org/val2017/000000235836.jpg"
+      ],
+      "sha256": "2a2269de29e82e4eac88dc306453c3840961ca79626d52f7c700b8c998284801",
+      "bytes": 320377
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000239843.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000239843.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000239843.jpg",
+        "http://images.cocodataset.org/val2017/000000239843.jpg"
+      ],
+      "sha256": "1b84c6eb650f77532334b4cde867fe0bdeeaa6d4cb580f60b6e3601e09f94e93",
+      "bytes": 86503
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000241326.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000241326.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000241326.jpg",
+        "http://images.cocodataset.org/val2017/000000241326.jpg"
+      ],
+      "sha256": "eb1585083b15741b1325aad6d9fc6d4950800563a2e748804721acf9620d5b97",
+      "bytes": 128338
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000260470.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000260470.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000260470.jpg",
+        "http://images.cocodataset.org/val2017/000000260470.jpg"
+      ],
+      "sha256": "a3d60aaef393ccd87e3ffe4841936cc8a2841cdb8319bac27c2dbf1cf68d3f84",
+      "bytes": 226985
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000268996.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000268996.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000268996.jpg",
+        "http://images.cocodataset.org/val2017/000000268996.jpg"
+      ],
+      "sha256": "7106daee507cee3840e3547c27cd7b7605d3e090ffdb813e37147a58b25abdf2",
+      "bytes": 113874
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000271997.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000271997.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000271997.jpg",
+        "http://images.cocodataset.org/val2017/000000271997.jpg"
+      ],
+      "sha256": "18cd5f8413788c4292caa6465e645c715df5b109c29f1db87c1dfc47894576f0",
+      "bytes": 159824
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000279887.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000279887.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000279887.jpg",
+        "http://images.cocodataset.org/val2017/000000279887.jpg"
+      ],
+      "sha256": "bdd1f97878d39577640b89f64296cf07203fd3f793f91175c6758bc5f735e1e9",
+      "bytes": 185641
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000281414.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000281414.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000281414.jpg",
+        "http://images.cocodataset.org/val2017/000000281414.jpg"
+      ],
+      "sha256": "642feaee715a26cb9d4ddc8d3e5dc1bcfadb9ddb3cbfe282f021b8fff830ea53",
+      "bytes": 228216
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000291490.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000291490.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000291490.jpg",
+        "http://images.cocodataset.org/val2017/000000291490.jpg"
+      ],
+      "sha256": "64ef671112dacfaec5345bb1ed3625909496c06776936528e197b91170cb90af",
+      "bytes": 163256
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000291634.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000291634.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000291634.jpg",
+        "http://images.cocodataset.org/val2017/000000291634.jpg"
+      ],
+      "sha256": "6ae78cd80b51f27f47479e0fb46603270c6fa874ce71bf0bac79ba00c377804f",
+      "bytes": 214665
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000295316.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000295316.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000295316.jpg",
+        "http://images.cocodataset.org/val2017/000000295316.jpg"
+      ],
+      "sha256": "be8853b08594969ae1e914c0ce664265b557236f5efcba4ca89ebd5d807f4271",
+      "bytes": 180892
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000295713.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000295713.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000295713.jpg",
+        "http://images.cocodataset.org/val2017/000000295713.jpg"
+      ],
+      "sha256": "6ad91f53f6e9d9c788852373253089e9e97238879e31bbb5315e76a0bbb6e299",
+      "bytes": 198658
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000300659.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000300659.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000300659.jpg",
+        "http://images.cocodataset.org/val2017/000000300659.jpg"
+      ],
+      "sha256": "021eaf98c76439e397785f9998b9ec15c73a6076fcee76ad29e5f38340a1a2d2",
+      "bytes": 106978
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000301061.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000301061.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000301061.jpg",
+        "http://images.cocodataset.org/val2017/000000301061.jpg"
+      ],
+      "sha256": "18a31a6894a29b529e50b472d359bb59417767b43b138d12a01454ebda3f1eb5",
+      "bytes": 158066
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000301867.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000301867.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000301867.jpg",
+        "http://images.cocodataset.org/val2017/000000301867.jpg"
+      ],
+      "sha256": "f050dfb982265cfd36b044a62ddff1c45f51fdbee63feac330ee2ae46bb2c560",
+      "bytes": 262567
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000302165.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000302165.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000302165.jpg",
+        "http://images.cocodataset.org/val2017/000000302165.jpg"
+      ],
+      "sha256": "b511159d3c07ca65cd19d4e0e409b13744ac86ab023273cc6a110f0004d91622",
+      "bytes": 159829
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000306700.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000306700.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000306700.jpg",
+        "http://images.cocodataset.org/val2017/000000306700.jpg"
+      ],
+      "sha256": "fef4b11772866cead39c370965226ec2638ac0533c89a8be32f02919c48cf148",
+      "bytes": 114401
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000314034.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000314034.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000314034.jpg",
+        "http://images.cocodataset.org/val2017/000000314034.jpg"
+      ],
+      "sha256": "a7e855c1b2c2c25d7563764369cdf182ae86d4c5c40ec1b0a7bb017eb8d6f932",
+      "bytes": 274082
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000322574.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000322574.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000322574.jpg",
+        "http://images.cocodataset.org/val2017/000000322574.jpg"
+      ],
+      "sha256": "ce4fc4045c9dbe6d5c321248c3d8af821036e2403c6d159d3745c75f6f6bc9e1",
+      "bytes": 106240
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000323355.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000323355.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000323355.jpg",
+        "http://images.cocodataset.org/val2017/000000323355.jpg"
+      ],
+      "sha256": "3f3cf2287d73bc198fb7c1503cf2ccac77b33d772ff89318b8b83546add5924b",
+      "bytes": 199542
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000323709.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000323709.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000323709.jpg",
+        "http://images.cocodataset.org/val2017/000000323709.jpg"
+      ],
+      "sha256": "68544dbd27f85ab9c77489c2049c12e0642c9b1f8d82184acd18d461f07dbcea",
+      "bytes": 126864
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000326082.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000326082.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000326082.jpg",
+        "http://images.cocodataset.org/val2017/000000326082.jpg"
+      ],
+      "sha256": "9d80329a61b02d7629f71c72bcc1700d59d957d93ed35f98823bb1965fb792d5",
+      "bytes": 88127
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000327780.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000327780.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000327780.jpg",
+        "http://images.cocodataset.org/val2017/000000327780.jpg"
+      ],
+      "sha256": "5b492dc6808bf75c27b3c085784fa102e325acb43125475c1ae1babc83a61fd4",
+      "bytes": 192547
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000331569.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000331569.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000331569.jpg",
+        "http://images.cocodataset.org/val2017/000000331569.jpg"
+      ],
+      "sha256": "7f972b81f9b020e5b335b400d7e883d10be078e173cd8d4615e32ba8567e919c",
+      "bytes": 124762
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000334719.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000334719.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000334719.jpg",
+        "http://images.cocodataset.org/val2017/000000334719.jpg"
+      ],
+      "sha256": "dd93e2f97c70a5dcf82b367db546ceaf41d4342fdad1136381ee6fa64a10ccdd",
+      "bytes": 123416
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000335800.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000335800.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000335800.jpg",
+        "http://images.cocodataset.org/val2017/000000335800.jpg"
+      ],
+      "sha256": "cd4f9f9e797d1146db474f98b7560dc443e7e6efa91fa563fece45374b8de7af",
+      "bytes": 217295
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000336309.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000336309.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000336309.jpg",
+        "http://images.cocodataset.org/val2017/000000336309.jpg"
+      ],
+      "sha256": "e596ab5e41982529cb87aaac601145764a28e08cfa8372491d3773b2320ad370",
+      "bytes": 87827
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000338428.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000338428.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000338428.jpg",
+        "http://images.cocodataset.org/val2017/000000338428.jpg"
+      ],
+      "sha256": "39faeb71402b36123dea3184df23c676991b14960e2cb17f3e2ef4449910941f",
+      "bytes": 251875
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000341719.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000341719.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000341719.jpg",
+        "http://images.cocodataset.org/val2017/000000341719.jpg"
+      ],
+      "sha256": "8556cac9bfb0f8cd5ddd65f50b63a21b27c069ad7e5ccfa4e4799a805ade7154",
+      "bytes": 147730
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000349860.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000349860.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000349860.jpg",
+        "http://images.cocodataset.org/val2017/000000349860.jpg"
+      ],
+      "sha256": "f07d8b177d8f2b0a9fa4dd06eaec034e5c52adec952caeb504eb794edf963da7",
+      "bytes": 104053
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000350002.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000350002.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000350002.jpg",
+        "http://images.cocodataset.org/val2017/000000350002.jpg"
+      ],
+      "sha256": "da0150f99c3e14a4ab56679028ef2cd6a0d467d998ca223ca2a586d92593154c",
+      "bytes": 138792
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000352584.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000352584.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000352584.jpg",
+        "http://images.cocodataset.org/val2017/000000352584.jpg"
+      ],
+      "sha256": "4138a54c7f98acf5069fc11cd2fb7042fd8790e2028fa8c7ed5fc7c9c4b76b65",
+      "bytes": 124159
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000355610.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000355610.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000355610.jpg",
+        "http://images.cocodataset.org/val2017/000000355610.jpg"
+      ],
+      "sha256": "2ccae45b3bcbcc5f1fc797eacdf1151e50d86187e08c2fe3b9e01efd13529c58",
+      "bytes": 51854
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000356498.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000356498.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000356498.jpg",
+        "http://images.cocodataset.org/val2017/000000356498.jpg"
+      ],
+      "sha256": "c52407be6458759627443a80a4fdd62730726ee8cf44c04ebae1d9c2d5776b8d",
+      "bytes": 160302
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000357742.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000357742.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000357742.jpg",
+        "http://images.cocodataset.org/val2017/000000357742.jpg"
+      ],
+      "sha256": "592f3b383bde4be94eb70469301905d2ffbaf5bab77e59a08ed6d11c3d25a7ce",
+      "bytes": 148562
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000360661.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000360661.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000360661.jpg",
+        "http://images.cocodataset.org/val2017/000000360661.jpg"
+      ],
+      "sha256": "712a562e5bb59a69ccff92aae43d6690a3193732c912cfa9c36440eda3386a9d",
+      "bytes": 148426
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000366611.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000366611.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000366611.jpg",
+        "http://images.cocodataset.org/val2017/000000366611.jpg"
+      ],
+      "sha256": "3e1171bf28aa4f22505762b05491ac79e81a3f479df7de56f9321594489b8902",
+      "bytes": 286082
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000370042.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000370042.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000370042.jpg",
+        "http://images.cocodataset.org/val2017/000000370042.jpg"
+      ],
+      "sha256": "8b5795fbc21b0d2f327e63ed4a44eb9dccbcd36d5a85a420731f7d3abcc59bc1",
+      "bytes": 124902
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000385029.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000385029.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000385029.jpg",
+        "http://images.cocodataset.org/val2017/000000385029.jpg"
+      ],
+      "sha256": "58a441c306e752465afbd5c5c829c330eb3965dca8e3c3eeb92fa04a72f84d54",
+      "bytes": 163086
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000398237.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000398237.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000398237.jpg",
+        "http://images.cocodataset.org/val2017/000000398237.jpg"
+      ],
+      "sha256": "b43f8242b584ca61b44ef84745a63405a6da721a5f5374e699109a241893540a",
+      "bytes": 223623
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000400573.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000400573.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000400573.jpg",
+        "http://images.cocodataset.org/val2017/000000400573.jpg"
+      ],
+      "sha256": "e69c9284d1daa751972b08af8edf17cefe5e610f83c046d9c824b7a38ada9cb0",
+      "bytes": 205719
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000414034.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000414034.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000414034.jpg",
+        "http://images.cocodataset.org/val2017/000000414034.jpg"
+      ],
+      "sha256": "05435cdebe50a959e357ddd3eb9621559934b8761d3526e57fd9170658ce3d93",
+      "bytes": 112560
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000415238.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000415238.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000415238.jpg",
+        "http://images.cocodataset.org/val2017/000000415238.jpg"
+      ],
+      "sha256": "d35dac662f828ab1b671f9acafaea3f1cc1992e231811806119fe3a063896471",
+      "bytes": 137700
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000416991.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000416991.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000416991.jpg",
+        "http://images.cocodataset.org/val2017/000000416991.jpg"
+      ],
+      "sha256": "939f11f245c93ee8d06b8f09c5d5029b076b81147e03e062f9982ac6ed57dc44",
+      "bytes": 169635
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000439715.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000439715.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000439715.jpg",
+        "http://images.cocodataset.org/val2017/000000439715.jpg"
+      ],
+      "sha256": "cb5afca9304177a472d98045a48c8cf00a07a1cfc3a960cb57777d0d6ee798a2",
+      "bytes": 209222
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000443303.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000443303.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000443303.jpg",
+        "http://images.cocodataset.org/val2017/000000443303.jpg"
+      ],
+      "sha256": "9e8d0db88fca8eaca54dcfcd59ed183f6f3472c73137ab9973edcf9c96e8c0ca",
+      "bytes": 83087
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000459153.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000459153.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000459153.jpg",
+        "http://images.cocodataset.org/val2017/000000459153.jpg"
+      ],
+      "sha256": "ea743cbb2b8cd0a4166f713974f6f467dc72f7b33a0d2d43a955dd1e895a875b",
+      "bytes": 380736
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000459887.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000459887.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000459887.jpg",
+        "http://images.cocodataset.org/val2017/000000459887.jpg"
+      ],
+      "sha256": "91d4f983a969c27401423dcf207ce6982ddee5dd93a11a81f15b535c6508914f",
+      "bytes": 224163
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000468501.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000468501.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000468501.jpg",
+        "http://images.cocodataset.org/val2017/000000468501.jpg"
+      ],
+      "sha256": "d3ac0b9b36c51edd555e3341dae45cf1a88e0f34f3e5eb46a5b0dc280317432f",
+      "bytes": 107478
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000472375.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000472375.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000472375.jpg",
+        "http://images.cocodataset.org/val2017/000000472375.jpg"
+      ],
+      "sha256": "928f89bb03d6c06a883ba1b4eadeeea8db2764134445a3c70c5d1c33cf13ed39",
+      "bytes": 135560
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000473974.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000473974.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000473974.jpg",
+        "http://images.cocodataset.org/val2017/000000473974.jpg"
+      ],
+      "sha256": "3eef77e177af7d06968fa2d7177e23dd3e1c6e2652d08446a07427783a534ede",
+      "bytes": 286157
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000483531.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000483531.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000483531.jpg",
+        "http://images.cocodataset.org/val2017/000000483531.jpg"
+      ],
+      "sha256": "8430390899e94fae7e04abfbc2e2fbada74c8762f0fa7040e7ecf0c5b0706719",
+      "bytes": 124629
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000483667.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000483667.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000483667.jpg",
+        "http://images.cocodataset.org/val2017/000000483667.jpg"
+      ],
+      "sha256": "b616500911130fcd278f76b0ec968778c9ac790489d852f972c14f5ac1b0ba0c",
+      "bytes": 77657
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000504589.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000504589.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000504589.jpg",
+        "http://images.cocodataset.org/val2017/000000504589.jpg"
+      ],
+      "sha256": "07164cb40421ae36d049da4b87e194086ea74debcb78c80b6fafc6cfaed59e3a",
+      "bytes": 178163
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000524456.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000524456.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000524456.jpg",
+        "http://images.cocodataset.org/val2017/000000524456.jpg"
+      ],
+      "sha256": "84d161aa4f1a335ec3971c5d050338e7c13b9e3c90231c0de7e677094a172eae",
+      "bytes": 206645
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000528399.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000528399.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000528399.jpg",
+        "http://images.cocodataset.org/val2017/000000528399.jpg"
+      ],
+      "sha256": "b28396f0dd205491b09ddbd832a8a1acf9d69b045ce7e0b68cc57600a2cbdb3f",
+      "bytes": 139202
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000533958.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000533958.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000533958.jpg",
+        "http://images.cocodataset.org/val2017/000000533958.jpg"
+      ],
+      "sha256": "4822d53ce9a21aaaec01d508cd612fa0f319952414fe35b45c2f492547eaa262",
+      "bytes": 202148
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000534827.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000534827.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000534827.jpg",
+        "http://images.cocodataset.org/val2017/000000534827.jpg"
+      ],
+      "sha256": "12c5d60436e2e16a10e33081ebdd6d47dc5d7abeba82fa1831cc76c52c17b142",
+      "bytes": 119041
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000546011.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000546011.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000546011.jpg",
+        "http://images.cocodataset.org/val2017/000000546011.jpg"
+      ],
+      "sha256": "bceeed535d5331e9f7cbd13414fe05565559ea899cd812b217f2b54963328ca3",
+      "bytes": 171581
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000551804.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000551804.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000551804.jpg",
+        "http://images.cocodataset.org/val2017/000000551804.jpg"
+      ],
+      "sha256": "18b537ff8dc351c1ce36d200f250c6bc3d9177ab0107607a2e610d34ed88b3f1",
+      "bytes": 236775
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000554328.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000554328.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000554328.jpg",
+        "http://images.cocodataset.org/val2017/000000554328.jpg"
+      ],
+      "sha256": "bfbb8569fd975f54b02c35a472e42ce775485554e312a79cc30fc0898d678414",
+      "bytes": 183023
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000555412.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000555412.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000555412.jpg",
+        "http://images.cocodataset.org/val2017/000000555412.jpg"
+      ],
+      "sha256": "110933a17bcc31cf2b1aee13da2064db5fd74a554bf4b35d4dd7b2c4db967e14",
+      "bytes": 221006
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000555705.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000555705.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000555705.jpg",
+        "http://images.cocodataset.org/val2017/000000555705.jpg"
+      ],
+      "sha256": "33cbe32cfb91e75486c65ad18c5ae9e824127512a41a785e470fe418af1bca1b",
+      "bytes": 146964
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000558854.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000558854.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000558854.jpg",
+        "http://images.cocodataset.org/val2017/000000558854.jpg"
+      ],
+      "sha256": "751c5d24f29eaa4aae3f53b94d3c3db971c1f6533eaffe16dc59f827d565c1d3",
+      "bytes": 109980
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000560266.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000560266.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000560266.jpg",
+        "http://images.cocodataset.org/val2017/000000560266.jpg"
+      ],
+      "sha256": "6db74520ef5774017fd94ec8e0d6adab0216db2ef17aca38defa2e86de498ccc",
+      "bytes": 244857
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000567640.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000567640.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000567640.jpg",
+        "http://images.cocodataset.org/val2017/000000567640.jpg"
+      ],
+      "sha256": "1576fd53f061a31167d63e752e8c1bb1d31f87677fb764b8544353d3cf517a61",
+      "bytes": 110735
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000577182.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000577182.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000577182.jpg",
+        "http://images.cocodataset.org/val2017/000000577182.jpg"
+      ],
+      "sha256": "5560fca0a895983a9350e8451b6e267945465302b8b211f5a42df20f9d9ac2f5",
+      "bytes": 238712
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000578922.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000578922.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000578922.jpg",
+        "http://images.cocodataset.org/val2017/000000578922.jpg"
+      ],
+      "sha256": "e8bdc69a8a58ae37aa4289191102f54585bc9dcf96202e061ff574c607c21b6b",
+      "bytes": 191143
+    },
+    {
+      "image": "data/benchmark_images/val2017/000000579307.jpg",
+      "url": "http://images.cocodataset.org/val2017/000000579307.jpg",
+      "official_urls": [
+        "https://images.cocodataset.org/val2017/000000579307.jpg",
+        "http://images.cocodataset.org/val2017/000000579307.jpg"
+      ],
+      "sha256": "4911ff1fd8fb03bea1fd6270003690b394493cfeae7b5527dcd43e7d28ffde6f",
+      "bytes": 204401
+    }
+  ],
+  "manifest_sha256": {
+    "sugarcrepe.jsonl": "3440c05bae1e542ce3e34f2ca8cc55c433409567ab7c7868842f00943a011659",
+    "pope.jsonl": "4925f49dbf015836c185c90592819f56a7211cbee016ab7c4d38ae96075b8146",
+    "transfer.jsonl": "5ffcc2a0c73e07f4d5311ba3cda659feb9075499332251d2a4847a2c9bafa893"
+  }
+}

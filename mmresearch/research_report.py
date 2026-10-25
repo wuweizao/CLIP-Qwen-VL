@@ -14,7 +14,7 @@ from pathlib import Path
 import numpy as np
 
 from .common import read_json, read_rows, save_json
-from .research_common import paths, run_name
+from .research_common import paths, run_name, fingerprint
 from .research_metrics import paired_effect, seed_summary
 
 
@@ -34,7 +34,7 @@ def _meta(out, model):
     if training.exists():
         identity = read_json(training)["identity"]
         return {key: identity[key] for key in ("regime", "seed") + COHORT}
-    match = re.fullmatch(r"(?P<regime>plain|retrieval|noise)_s(?P<seed>\d+)_(?P<sampling>.+?)_n(?P<count>\d+)_(?P<scope>language(?:_merger)?)_(?P<budget>epochs|matched_steps)", model)
+    match = re.fullmatch(r"(?P<regime>plain|retrieval|noise)_s(?P<seed>\d+)_(?P<sampling>.+?)_n(?P<count>\d+)_(?P<scope>language(?:_merger)?)_(?P<budget>epochs|matched_steps|single_epoch)", model)
     if not match:
         raise ValueError("Cannot identify training configuration: " + model)
     info = match.groupdict()
@@ -184,6 +184,8 @@ def _effects(runs, cfg=None):
         plain_none_key = ("plain", seed, sampling, count, scope, budget, split, "none", bank, False)
         retrieval_none_key = ("retrieval", seed, sampling, count, scope, budget, split, "none", bank, False)
         retrieval_image_key = ("retrieval", seed, sampling, count, scope, budget, split, "image", bank, False)
+        plain_adaptive_key = ("plain", seed, sampling, count, scope, budget, split, "adaptive", bank, False)
+        noise_image_key = ("noise", seed, sampling, count, scope, budget, split, "image", bank, False)
         noise_adaptive_key = ("noise", seed, sampling, count, scope, budget, split, "adaptive", bank, False)
         for metric in ("token_f1", "cider_d_fixed_df", "clipscore", "words"):
             if all(k in lookup for k in (plain_none_key, retrieval_none_key, retrieval_image_key)):
@@ -195,6 +197,15 @@ def _effects(runs, cfg=None):
                 pending[("interaction:(retrieval_image-retrieval_none)-(plain_image-plain_none)", tuple(cohort.items()), metric)][seed] = value
             if noise_adaptive_key in lookup:
                 pending[("combined:noise_adaptive-plain_image", tuple(cohort.items()), metric)][seed] = _deltas(run["rows"], lookup[noise_adaptive_key]["rows"], metric)
+            if noise_image_key in lookup:
+                pending[("noise_only:noise_image-plain_image", tuple(cohort.items()), metric)][seed] = _deltas(run["rows"], lookup[noise_image_key]["rows"], metric)
+            if all(k in lookup for k in (plain_adaptive_key, noise_image_key, noise_adaptive_key)):
+                plain_gate_delta = _deltas(run["rows"], lookup[plain_adaptive_key]["rows"], metric)
+                noise_gate_delta = _deltas(lookup[noise_image_key]["rows"], lookup[noise_adaptive_key]["rows"], metric)
+                if set(plain_gate_delta) != set(noise_gate_delta):
+                    raise ValueError("Four-arm interaction requires the same image IDs")
+                value = {i: noise_gate_delta[i] - plain_gate_delta[i] for i in plain_gate_delta}
+                pending[("interaction:(noise_adaptive-noise_image)-(plain_adaptive-plain_image)", tuple(cohort.items()), metric)][seed] = value
     return [_effect_summary(label, dict(cohort), metric, values)
             for (label, cohort, metric), values in sorted(pending.items(), key=lambda item: str(item[0]))]
 
@@ -310,6 +321,22 @@ def _similarity_utility_outputs(report, runs, cfg):
     return quartiles, summaries, bool(queries)
 
 
+def _retrieval_lines(cfg, out, report):
+    path = out / "retrieval_metrics.json"
+    if not path.exists():
+        return ["## CLIP 双向检索", "", "检索评估尚未完成。", ""]
+    result = read_json(path)
+    if result["identity"] != fingerprint(cfg):
+        raise ValueError("Stale retrieval metrics")
+    save_json(report / "retrieval_metrics.json", result)
+    lines = ["## CLIP 双向检索", "",
+        "候选池为 %d 张新测试图像和 %d 条描述。图像检索描述时任一同图描述均为正例；描述检索图像时所属图像为正例。此任务覆盖完整新测试图库，与 256 张生成确认集及训练集 RAG 记忆库分别计量。" % (result["images"], result["captions"]), "",
+        "|方向|Recall@1|Recall@5|Recall@10|", "|---|---:|---:|---:|"]
+    for key, label in (("image_to_text", "image→text"), ("text_to_image", "text→image")):
+        lines.append("|%s|%.4f|%.4f|%.4f|" % (label, *[result[key]["R@%d" % k] for k in (1, 5, 10)]))
+    return lines + ["", "候选池规模不同的 Recall 不直接比较；本表不把检索 Recall 当作描述生成的事实正确率。", ""]
+
+
 def _benchmark_lines(out, report):
     completed = []
     for path in sorted((out / "benchmarks").glob("*/*_metrics.json")):
@@ -350,7 +377,7 @@ def _benchmark_lines(out, report):
         if item["task"] == "transfer":
             lines.append("|%s|%s|%s|%s|%s|%s|" % (item["model"], item["n_images"], _fmt(item["token_f1"]),
                          _fmt(item["rouge_l"]), _fmt(item["cider_d_fixed_df"]), _fmt(item["words"])))
-    lines += ["", "跨来源图像由 SugarCrepe 子集决定，参考为其官方正例描述，作者身份未独立核验；该集合受困难负例基准筛选条件影响，不是具有代表性的完整 COCO 描述测试集。该实验也不构成人工盲评。"]
+    lines += ["", "跨来源图像由 SugarCrepe 子集决定，参考为其官方正例描述，作者身份未独立核验；该集合受困难负例基准筛选条件影响，不是具有代表性的完整 COCO 描述测试集。该实验也不构成人工盲评。Flickr 确认集通常每图有 5 条参考，而此处多数图片仅有 1 条入选正例。Token-F1/ROUGE-L 取最佳参考，因此不能把两数据集的绝对分数差直接解释成跨域退化幅度；可比较同一跨来源集合上的模型表现。"]
     return lines
 
 
@@ -409,7 +436,8 @@ def _figures(cfg, report, runs, groups, out):
                 seeds = {r["seed"] for r in values}
                 label = "zero-shot (fixed model)" if regime == "zero_shot" else "%s (%d training seed%s)" % (regime, len(seeds), "s" if len(seeds) != 1 else "")
                 ax.scatter([r["words"] for r in values], [r["token_f1"] for r in values],
-                           label=label, color=colors[regime], alpha=.75)
+                           label=label, color=colors[regime], alpha=.75,
+                           marker={"zero_shot": "*", "plain": "o", "retrieval": "s", "noise": "^"}[regime])
         ax.set(xlabel="Generated words (run mean)", ylabel="Token F1",
                title="Length versus lexical quality; no causal claim\nSame %d confirmation images; core configurations only" % cfg["confirmation_images"])
         ax.grid(alpha=.15)
@@ -432,7 +460,9 @@ def _figures(cfg, report, runs, groups, out):
             for axis, key in zip(axes, ("loss", "eval_loss")):
                 points = [(r.get("step", r.get("epoch")), r[key]) for r in history if key in r]
                 if points:
-                    axis.plot(*zip(*points), color=colors[meta["regime"]], alpha=.6, marker="." if key == "eval_loss" else None, label=label)
+                    axis.plot(*zip(*points), color=colors[meta["regime"]], alpha=.7,
+                              linestyle={42: "-", 43: "--", 44: ":"}.get(meta["seed"], "-"),
+                              marker="." if key == "eval_loss" else None, label=label)
                 axis.set(xlabel="Optimizer step", ylabel="Loss", title="Training" if key == "loss" else "Validation (same no-context objective)")
                 axis.grid(alpha=.15)
         axes[1].legend(fontsize=7, loc="best")
@@ -481,8 +511,9 @@ def run(cfg):
              "本报告只汇总已经写入完整预测与指标的运行。空白或 pending 不代表零分。", "",
              "- 主对照完成：%d/%d；已完成评估运行：%d；已保存 adapter：%d。" % (completed_core, len(expected), len(runs), status["completed_adapters"]),
              "- 人工相关性核验与盲评：pending。本报告没有把自动评分当作人工判断。",
-             "- 预先固定的协议见 [protocol.md](protocol.md)；逐运行数据见 [experiments.csv](experiments.csv)。", "",
-             "## 完成的确认集与预先固定诊断子集对比", "",
+             "- 预先固定的协议见 [protocol.md](protocol.md)；逐运行数据见 [experiments.csv](experiments.csv)。", ""]
+    lines += _retrieval_lines(cfg, out, report)
+    lines += ["## 完成的确认集与预先固定诊断子集对比", "",
              "数值为可用训练种子的均值 ± 样本标准差；仅一个种子时不估计种子方差。Zero-shot 为固定基础模型，不计作独立训练种子。", "",
              "|训练方案|采样/图像数/预算|上下文|Bank|图像数|种子数|Token-F1|CIDEr-D变体|CLIPScore|输出词数|检索使用率|",
              "|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|"]
@@ -506,7 +537,7 @@ def run(cfg):
             g.get("context_copy_rate_when_used_n_defined_runs", 0),
             _fmt(g.get("input_tokens_mean"), 1), _fmt(g.get("context_tokens_mean"), 1)))
     lines += ["", "## 配对效应与交互", "",
-              "所有差值均按名称右侧减左侧的明确表达式计算，并要求图像 ID 完全一致。只有预先登记的 text/rerank/conflict/partial 诊断，才将主条件限定至完全相同、顺序一致的确认集前缀；不对任意缺失样本取交集。95% 图像 bootstrap 区间是在可用固定训练运行取平均后重采样图像，不能解释成训练随机种子的不确定性。种子 SD 单独列出；不作多重比较校正。", "",
+              "所有差值均按效应名称中的明确减法表达式计算，并要求图像 ID 完全一致。只有预先登记的 text/rerank/conflict/partial 诊断，才将主条件限定至完全相同、顺序一致的确认集前缀；不对任意缺失样本取交集。95% 图像 bootstrap 区间是在可用固定训练运行取平均后重采样图像，不能解释成训练随机种子的不确定性。种子 SD 单独列出；不作多重比较校正。", "",
               "|效应（表达式即差值方向）|配置/Bank|分析子集|图像数|种子数|Token-F1 Δ|种子 SD|95% 图像区间|",
               "|---|---|---|---:|---:|---:|---:|---|"]
     for e in effects:

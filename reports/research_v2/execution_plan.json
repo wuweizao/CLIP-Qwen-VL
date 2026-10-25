@@ -1,0 +1,855 @@
+{
+  "identity": {
+    "config_sha256": "09adf738160a0985353dd2b26ec3db4d33ac73ec4bf9bad02dbae32868048618",
+    "data_manifests": {
+      "train": "ec1fa518bd1bc1d0b49815989c8aad6355b0dab6513f68776ef0e5626ffe0a53",
+      "validation": "92e0f89cd814ce43b9d36aa793d2af7a35a82bfd74f1098e079073e159d5e193",
+      "test": "420394e3b3fefe70afd4f0c97769a6461d027d90ce0434f48537af2f820b10d5"
+    }
+  },
+  "phase": "all",
+  "steps": [
+    {
+      "args": [
+        "index"
+      ],
+      "status": "completed",
+      "seconds": 32.38474510004744,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "zero_shot",
+        "--seed",
+        "42",
+        "--full"
+      ],
+      "status": "completed",
+      "seconds": 281.211391299963,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "42"
+      ],
+      "status": "completed",
+      "seconds": 111.08706599997822,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--full"
+      ],
+      "status": "completed",
+      "seconds": 374.5181447000941,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "report"
+      ],
+      "status": "completed",
+      "seconds": 1.057144399965182,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "retrieval",
+        "--seed",
+        "42"
+      ],
+      "status": "completed",
+      "seconds": 102.73166990000755,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "retrieval",
+        "--seed",
+        "42",
+        "--full"
+      ],
+      "status": "completed",
+      "seconds": 360.14562289998867,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "report"
+      ],
+      "status": "completed",
+      "seconds": 1.3610359000740573,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "noise",
+        "--seed",
+        "42"
+      ],
+      "status": "completed",
+      "seconds": 106.1164866000181,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "noise",
+        "--seed",
+        "42",
+        "--full"
+      ],
+      "status": "completed",
+      "seconds": 327.7584580000257,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "report"
+      ],
+      "status": "completed",
+      "seconds": 1.2925256999442354,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "43"
+      ],
+      "status": "completed",
+      "seconds": 111.5816195999505,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "43",
+        "--full"
+      ],
+      "status": "completed",
+      "seconds": 277.9566990999738,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "report"
+      ],
+      "status": "completed",
+      "seconds": 1.4076867999974638,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "retrieval",
+        "--seed",
+        "43"
+      ],
+      "status": "completed",
+      "seconds": 119.10814440005925,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "retrieval",
+        "--seed",
+        "43",
+        "--full"
+      ],
+      "status": "completed",
+      "seconds": 254.51284839992877,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "report"
+      ],
+      "status": "completed",
+      "seconds": 1.5577214999357238,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "noise",
+        "--seed",
+        "43"
+      ],
+      "status": "completed",
+      "seconds": 102.11937369999941,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "noise",
+        "--seed",
+        "43",
+        "--full"
+      ],
+      "status": "completed",
+      "seconds": 242.46376610000152,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "report"
+      ],
+      "status": "completed",
+      "seconds": 1.6231883999425918,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "44"
+      ],
+      "status": "completed",
+      "seconds": 119.73806800006423,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "44",
+        "--full"
+      ],
+      "status": "completed",
+      "seconds": 286.0809683999978,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "report"
+      ],
+      "status": "completed",
+      "seconds": 1.8564828000962734,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "retrieval",
+        "--seed",
+        "44"
+      ],
+      "status": "completed",
+      "seconds": 133.4848855000455,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "retrieval",
+        "--seed",
+        "44",
+        "--full"
+      ],
+      "status": "completed",
+      "seconds": 301.2209898000583,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "report"
+      ],
+      "status": "completed",
+      "seconds": 2.3418524999869987,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "noise",
+        "--seed",
+        "44"
+      ],
+      "status": "completed",
+      "seconds": 139.50898379995488,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "noise",
+        "--seed",
+        "44",
+        "--full"
+      ],
+      "status": "completed",
+      "seconds": 307.2198889000574,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "report"
+      ],
+      "status": "completed",
+      "seconds": 2.005274900002405,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--sampling",
+        "diversity"
+      ],
+      "status": "completed",
+      "seconds": 133.28688420006074,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--sampling",
+        "diversity"
+      ],
+      "status": "completed",
+      "seconds": 104.02745829999913,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--sampling",
+        "coverage"
+      ],
+      "status": "completed",
+      "seconds": 106.99481910001487,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--sampling",
+        "coverage"
+      ],
+      "status": "completed",
+      "seconds": 88.6505416999571,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--count",
+        "32",
+        "--budget",
+        "epochs"
+      ],
+      "status": "completed",
+      "seconds": 45.49131149996538,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--count",
+        "32",
+        "--budget",
+        "epochs"
+      ],
+      "status": "completed",
+      "seconds": 94.2046766000567,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--count",
+        "32",
+        "--budget",
+        "matched_steps"
+      ],
+      "status": "completed",
+      "seconds": 97.02959940000437,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--count",
+        "32",
+        "--budget",
+        "matched_steps"
+      ],
+      "status": "completed",
+      "seconds": 93.03207640000619,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "43",
+        "--sampling",
+        "diversity"
+      ],
+      "status": "completed",
+      "seconds": 108.43979780003428,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "43",
+        "--sampling",
+        "diversity"
+      ],
+      "status": "completed",
+      "seconds": 90.3262574999826,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "43",
+        "--sampling",
+        "coverage"
+      ],
+      "status": "completed",
+      "seconds": 103.01150909997523,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "43",
+        "--sampling",
+        "coverage"
+      ],
+      "status": "completed",
+      "seconds": 91.36181000003126,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "43",
+        "--count",
+        "32",
+        "--budget",
+        "epochs"
+      ],
+      "status": "completed",
+      "seconds": 46.022070899955,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "43",
+        "--count",
+        "32",
+        "--budget",
+        "epochs"
+      ],
+      "status": "completed",
+      "seconds": 99.15125969995279,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "43",
+        "--count",
+        "32",
+        "--budget",
+        "matched_steps"
+      ],
+      "status": "completed",
+      "seconds": 103.21322729997337,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "43",
+        "--count",
+        "32",
+        "--budget",
+        "matched_steps"
+      ],
+      "status": "completed",
+      "seconds": 99.0496523999609,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "44",
+        "--sampling",
+        "diversity"
+      ],
+      "status": "completed",
+      "seconds": 107.18367189995479,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "44",
+        "--sampling",
+        "diversity"
+      ],
+      "status": "completed",
+      "seconds": 86.637450399925,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "44",
+        "--sampling",
+        "coverage"
+      ],
+      "status": "completed",
+      "seconds": 102.56640530005097,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "44",
+        "--sampling",
+        "coverage"
+      ],
+      "status": "completed",
+      "seconds": 85.00618040002882,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "44",
+        "--count",
+        "32",
+        "--budget",
+        "epochs"
+      ],
+      "status": "completed",
+      "seconds": 44.36858789995313,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "44",
+        "--count",
+        "32",
+        "--budget",
+        "epochs"
+      ],
+      "status": "completed",
+      "seconds": 90.2355345999822,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "44",
+        "--count",
+        "32",
+        "--budget",
+        "matched_steps"
+      ],
+      "status": "completed",
+      "seconds": 90.6272671999177,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "44",
+        "--count",
+        "32",
+        "--budget",
+        "matched_steps"
+      ],
+      "status": "completed",
+      "seconds": 85.89177830005065,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--count",
+        "1024",
+        "--budget",
+        "single_epoch"
+      ],
+      "status": "completed",
+      "seconds": 298.65521519992035,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--count",
+        "1024",
+        "--budget",
+        "single_epoch"
+      ],
+      "status": "completed",
+      "seconds": 80.43454909999855,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--count",
+        "1024",
+        "--budget",
+        "matched_steps"
+      ],
+      "status": "completed",
+      "seconds": 87.9161507000681,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--count",
+        "1024",
+        "--budget",
+        "matched_steps"
+      ],
+      "status": "completed",
+      "seconds": 85.65973579999991,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "train",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--scope",
+        "language_merger"
+      ],
+      "status": "completed",
+      "seconds": 99.15177490003407,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "evaluate",
+        "--regime",
+        "plain",
+        "--seed",
+        "42",
+        "--scope",
+        "language_merger"
+      ],
+      "status": "completed",
+      "seconds": 81.62237060000189,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "bench",
+        "--regime",
+        "zero_shot",
+        "--seed",
+        "42"
+      ],
+      "status": "completed",
+      "seconds": 59.88193620007951,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "bench",
+        "--regime",
+        "plain",
+        "--seed",
+        "42"
+      ],
+      "status": "completed",
+      "seconds": 63.05233149998821,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "bench",
+        "--regime",
+        "retrieval",
+        "--seed",
+        "42"
+      ],
+      "status": "completed",
+      "seconds": 62.51696660008747,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "bench",
+        "--regime",
+        "noise",
+        "--seed",
+        "42"
+      ],
+      "status": "completed",
+      "seconds": 62.31748690002132,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "human"
+      ],
+      "status": "completed",
+      "seconds": 0.944971099961549,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "report"
+      ],
+      "status": "completed",
+      "seconds": 1.6456522000953555,
+      "exit_code": 0
+    },
+    {
+      "args": [
+        "verify"
+      ],
+      "status": "completed",
+      "seconds": 11.538326699985191,
+      "exit_code": 0
+    }
+  ]
+}

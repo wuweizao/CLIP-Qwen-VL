@@ -1,0 +1,172 @@
+{
+  "config": {
+    "study_id": "research_v2_20261025",
+    "data_dir": "data/research_v2",
+    "output_dir": "outputs/research_v2",
+    "report_dir": "reports/research_v2",
+    "dataset": "jxie/flickr8k",
+    "dataset_revision": "56f58c967835f7c508d684f36bd7897cca9d7634",
+    "clip_model": "D:\\Project\\CLIP\\data\\models\\clip-vit-base-patch32",
+    "vl_model": "D:\\Project\\CLIP\\data\\models\\Qwen2.5-VL-3B-Instruct",
+    "seed": 42,
+    "data_seed": 42,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_images": 1024,
+    "validation_images": 128,
+    "test_images": 512,
+    "core_train_images": 128,
+    "confirmation_images": 256,
+    "diagnostic_images": 64,
+    "gate_validation_images": 64,
+    "captions_per_train_image": 1,
+    "epochs": 2,
+    "learning_rate": 0.0001,
+    "gradient_accumulation_steps": 8,
+    "lora_rank": 8,
+    "batch_size": 16,
+    "inference_batch_size": 4,
+    "max_pixels": 100352,
+    "max_new_tokens": 48,
+    "rag_k": 2,
+    "context_max_words": 20,
+    "regimes": [
+      "plain",
+      "retrieval",
+      "noise"
+    ],
+    "evaluation_modes": [
+      "none",
+      "random",
+      "image",
+      "adaptive"
+    ],
+    "diagnostic_modes": [
+      "partial",
+      "conflict",
+      "text",
+      "rerank"
+    ],
+    "gate_score_quantiles": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "sugarcrepe_per_type": 16,
+    "pope_questions": 120,
+    "benchmark_seed": 20261025
+  },
+  "fingerprint": {
+    "config_sha256": "09adf738160a0985353dd2b26ec3db4d33ac73ec4bf9bad02dbae32868048618",
+    "data_manifests": {
+      "train": "ec1fa518bd1bc1d0b49815989c8aad6355b0dab6513f68776ef0e5626ffe0a53",
+      "validation": "92e0f89cd814ce43b9d36aa793d2af7a35a82bfd74f1098e079073e159d5e193",
+      "test": "420394e3b3fefe70afd4f0c97769a6461d027d90ce0434f48537af2f820b10d5"
+    }
+  },
+  "python": "3.10.21",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.1",
+    "peft": "0.17.1",
+    "datasets": "3.6.0",
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0"
+  },
+  "model_sources": {
+    "clip_model": {
+      "repo": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "files": [
+        {
+          "file": "config.json",
+          "sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770"
+        },
+        {
+          "file": "merges.txt",
+          "sha256": "f526393189112391ce6f9795d4695f704121ce452c3aad1f5335cc41337eba85"
+        },
+        {
+          "file": "preprocessor_config.json",
+          "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd"
+        },
+        {
+          "file": "pytorch_model.bin",
+          "sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f"
+        },
+        {
+          "file": "special_tokens_map.json",
+          "sha256": "f8c0d6c39aee3f8431078ef6646567b0aba7f2246e9c54b8b99d55c22b707cbf"
+        },
+        {
+          "file": "tokenizer.json",
+          "sha256": "b556ac8c99757ffb677208af34bc8c6721572114111a6e0aaf5fa69ff0b8d842"
+        },
+        {
+          "file": "tokenizer_config.json",
+          "sha256": "34b7336e4bee12e0a9730eaf5189f582ef3c3eea5027f65730e5717256755aad"
+        },
+        {
+          "file": "vocab.json",
+          "sha256": "5047b556ce86ccaf6aa22b3ffccfc52d391ea4accdab9c2f2407da5b742d4363"
+        }
+      ]
+    },
+    "vl_model": {
+      "repo": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "files": [
+        {
+          "file": "chat_template.json",
+          "sha256": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96"
+        },
+        {
+          "file": "config.json",
+          "sha256": "7ed3eed5be6924cc800e8a5e53fc405c1aab1aaf36bad65c33403b36c56827f5"
+        },
+        {
+          "file": "generation_config.json",
+          "sha256": "533f191cc257b7de37a4fccd0a7a1706d75e1aa660f93efaa54e5a2a9f9aace9"
+        },
+        {
+          "file": "merges.txt",
+          "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+        },
+        {
+          "file": "model.safetensors.index.json",
+          "sha256": "c7dd78a4c6bea60b51332f1baf37b8f8124ecab2c35395a29a29825bf2619768"
+        },
+        {
+          "file": "preprocessor_config.json",
+          "sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0"
+        },
+        {
+          "file": "tokenizer.json",
+          "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+        },
+        {
+          "file": "tokenizer_config.json",
+          "sha256": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56"
+        },
+        {
+          "file": "vocab.json",
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        {
+          "file": "model-00001-of-00002.safetensors",
+          "sha256": "41a8895c164b4d32bae6b302f4603fcbc1797f32dafa45c7e9bcda23c6755df8"
+        },
+        {
+          "file": "model-00002-of-00002.safetensors",
+          "sha256": "365531ff8752420e89dee707b79d021fb2d6e25abafe486f080555a4fe6972e4"
+        }
+      ]
+    }
+  }
+}

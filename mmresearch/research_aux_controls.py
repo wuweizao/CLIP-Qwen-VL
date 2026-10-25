@@ -177,7 +177,7 @@ def summarize(cfg):
 
 
 def run(cfg):
-    """Run only the supplementary pairs, leaving the existing plan untouched."""
+    """Run supplementary pairs and baseline image interventions independently."""
     from .research_evaluate import Generator
     data, out, report = paths(cfg)
     rows = load_split(cfg, "test")[:cfg["diagnostic_images"]]
@@ -189,11 +189,19 @@ def run(cfg):
     if protocol_path.exists() and read_json(protocol_path) != protocol:
         raise ValueError("Refusing to replace a fixed supplementary control protocol")
     save_json(protocol_path, protocol)
+    save_json(out / "baseline_shuffle_protocol.json", {
+        "identity": fingerprint(cfg), "query_ids": [r["id"] for r in rows],
+        "conditions": ["none", "image"], "image_permutation": "cyclic shift by one within the fixed diagnostic subset",
+        "interpretation": "Supplementary zero-shot image-dependence control, specified after the initial plan and before its own generation"})
     report.mkdir(parents=True, exist_ok=True)
     for regime, name in _names(cfg):
         seed_all(cfg["seeds"][0])
         generator = Generator(cfg, name)
         try:
+            if regime == "zero_shot":
+                original_contexts = read_json(context_path(cfg, "test"))
+                generator.generate(rows, "test", "none", original_contexts, shuffled=True)
+                generator.generate(rows, "test", "image", original_contexts, shuffled=True)
             generator.generate(rows, "test", "image", {"image": full}, bank=BANKS[0])
             generator.generate(rows, "test", "image", {"image": subset}, bank=BANKS[1])
         finally:

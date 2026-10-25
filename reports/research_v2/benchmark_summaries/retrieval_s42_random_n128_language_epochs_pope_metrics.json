@@ -1,0 +1,121 @@
+{
+  "status": "completed",
+  "task": "pope",
+  "model": "retrieval_s42_random_n128_language_epochs",
+  "n": 360,
+  "n_images": 20,
+  "subset_only": true,
+  "training_domain": "Flickr8k caption instructions",
+  "identity": {
+    "config_sha256": "09adf738160a0985353dd2b26ec3db4d33ac73ec4bf9bad02dbae32868048618",
+    "data_manifests": {
+      "train": "ec1fa518bd1bc1d0b49815989c8aad6355b0dab6513f68776ef0e5626ffe0a53",
+      "validation": "92e0f89cd814ce43b9d36aa793d2af7a35a82bfd74f1098e079073e159d5e193",
+      "test": "420394e3b3fefe70afd4f0c97769a6461d027d90ce0434f48537af2f820b10d5"
+    },
+    "model": "retrieval_s42_random_n128_language_epochs",
+    "task": "pope",
+    "benchmark_manifest_sha256": "4925f49dbf015836c185c90592819f56a7211cbee016ab7c4d38ae96075b8146",
+    "benchmark_source_sha256": "0e18e0891044f773b87aa17c8561968c597fc51daf938e80d32f5ac8b6642497",
+    "adapter_sha256": "d1850c33c20d2d1290af74c116cdca2bbf77dc2aa58a83562aaa9488513f317d",
+    "base_model_source_sha256": "fbfac68938e6d8b36716dbc401b447387bfa8225569b6808769a565f8baa34c4",
+    "protocol_version": 1,
+    "benchmark_seed": 20261025,
+    "max_new_tokens": 8
+  },
+  "seconds_this_invocation": 23.916777799953707,
+  "peak_gpu_gib": 7.117311954498291,
+  "accuracy": 0.8527777777777777,
+  "precision": 0.9635036496350365,
+  "recall": 0.7333333333333333,
+  "f1": 0.8328075709779179,
+  "macro_f1": 0.8506469616676191,
+  "yes_ratio": 0.38055555555555554,
+  "invalid_rate": 0.0,
+  "tp": 132,
+  "fp": 5,
+  "tn": 175,
+  "fn": 48,
+  "fn_including_invalid_positive": 48,
+  "invalid_positive": 0,
+  "invalid_negative": 0,
+  "label_counts": {
+    "yes": 180,
+    "no": 180
+  },
+  "parser": "strict_leading_yes_no_v1",
+  "variants": {
+    "adversarial": {
+      "n": 120,
+      "accuracy": 0.8333333333333334,
+      "precision": 0.9166666666666666,
+      "recall": 0.7333333333333333,
+      "f1": 0.8148148148148148,
+      "macro_f1": 0.8316498316498316,
+      "yes_ratio": 0.4,
+      "invalid_rate": 0.0,
+      "tp": 44,
+      "fp": 4,
+      "tn": 56,
+      "fn": 16,
+      "fn_including_invalid_positive": 16,
+      "invalid_positive": 0,
+      "invalid_negative": 0,
+      "label_counts": {
+        "yes": 60,
+        "no": 60
+      },
+      "parser": "strict_leading_yes_no_v1",
+      "n_images": 20
+    },
+    "popular": {
+      "n": 120,
+      "accuracy": 0.8583333333333333,
+      "precision": 0.9777777777777777,
+      "recall": 0.7333333333333333,
+      "f1": 0.838095238095238,
+      "macro_f1": 0.856084656084656,
+      "yes_ratio": 0.375,
+      "invalid_rate": 0.0,
+      "tp": 44,
+      "fp": 1,
+      "tn": 59,
+      "fn": 16,
+      "fn_including_invalid_positive": 16,
+      "invalid_positive": 0,
+      "invalid_negative": 0,
+      "label_counts": {
+        "yes": 60,
+        "no": 60
+      },
+      "parser": "strict_leading_yes_no_v1",
+      "n_images": 20
+    },
+    "random": {
+      "n": 120,
+      "accuracy": 0.8666666666666667,
+      "precision": 1.0,
+      "recall": 0.7333333333333333,
+      "f1": 0.846153846153846,
+      "macro_f1": 0.8642533936651583,
+      "yes_ratio": 0.36666666666666664,
+      "invalid_rate": 0.0,
+      "tp": 44,
+      "fp": 0,
+      "tn": 60,
+      "fn": 16,
+      "fn_including_invalid_positive": 16,
+      "invalid_positive": 0,
+      "invalid_negative": 0,
+      "label_counts": {
+        "yes": 60,
+        "no": 60
+      },
+      "parser": "strict_leading_yes_no_v1",
+      "n_images": 20
+    }
+  },
+  "task_shift": "object-existence yes/no; not the caption training task",
+  "invalid_policy": "invalid outputs retained and counted as incorrect in accuracy",
+  "dependence": "same images and correlated questions across variants; not independent image observations"
+}

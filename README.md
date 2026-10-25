@@ -2,11 +2,11 @@
 
 在单张 16GB GPU 上完成可复现的小规模研究：Flickr8k 双向检索 → Qwen2.5-VL 图像描述基线 → LoRA 指令微调 → 提示词/样本比例/检索增强消融。
 
-**实验范围：**这是教学与工程验证规模的子集实验，不代表 Flickr8k 全量基准，也不能据此宣称模型普遍优于其他系统。实际结果见 [实验报告](reports/results.md)，运行记录见 [项目状态](reports/status.md)。
+**当前研究主线：**从最初的工程验证扩展到检索干扰与小样本输入适应研究，已完成三个训练种子、36 组主对照和每组 256 张新确认图片。研究结论见 [v2 研究发现](reports/research_v2/findings.md)，逐组数据见 [v2 实验报告](reports/research_v2/results.md)。这些结果仅适用于固定子集与协议。
 
-## 已完成的真实实验
+## 第一阶段探索结果（历史）
 
-12 组评估、768 条预测、两个 LoRA adapter 已完成；9 项测试和完整性核验通过。
+第一阶段完成 12 组评估、768 条预测和两个 LoRA adapter；当时的 9 项测试及完整性核验通过。原始结果见 [探索报告](reports/results.md) 与 [阶段记录](reports/status.md)，不与下面的 v2 确认集分数直接合并。
 
 |设置（concise，无 RAG）|Token-F1|ROUGE-L|
 |---|---:|---:|
@@ -24,17 +24,42 @@
 
 主对比固定 128 图像适配预算、每图 1 条人工描述、2 轮、三个训练种子；前 256 张新测试图像用于预先固定的确认评估，64 张诊断子集用于部分相关/合成冲突/图片打乱等干预。独立扩展包括采样策略、等步数对比、1024 图像规模和连接模块适配。完整方案见 [预先固定的协议](reports/research_v2/protocol.md)，只将实际完成的结果列入 [第二阶段报告](reports/research_v2/results.md)。
 
+自动实验已完成：主流程 66/66 项、24 个 adapter、136 次 Flickr 评估（含验证与补充控制）及 19,264 条预测；四个模型的 12 项外部任务另有 2,320 条输出。这些重复评估不增加独立测试图片数量。81 项本地测试及[数据与指标核验](reports/research_v2/verification.json)通过，人工评分按用户选择延后；云端测试因 GitHub 账号限制未获分配运行环境，详见 [CI 状态](reports/research_v2/ci_status.json)。
+
+|训练方式|无检索 Token-F1|固定 Top-K|自适应检索|
+|---|---:|---:|---:|
+|普通 SFT|0.5766 ± 0.0020|0.5593 ± 0.0029|0.5754 ± 0.0075|
+|检索上下文 SFT|0.5799 ± 0.0010|0.5645 ± 0.0015|0.5767 ± 0.0026|
+|抗噪声 SFT|0.5747 ± 0.0019|0.5629 ± 0.0020|0.5668 ± 0.0070|
+
+数值为三个训练种子的均值 ± SD。固定 zero-shot 无检索基线为 0.5174。普通 SFT 后固定检索平均降低 1.72 个百分点，自适应相对固定检索恢复 1.61 个百分点；两项改进结合没有超过单独自适应。词汇分数不能直接解释为视觉事实准确率，训练中加入检索后仍出现下降，也不能唯一归因于输入格式变化。
+
+![v2 主实验](reports/research_v2/comparison_seed_mean_sd.png)
+
 ```powershell
+# Fresh clones first recreate the fixed v1 exploration split; no v1 training is needed.
+python scripts/download_models.py
+python -m mmresearch.cli prepare
 python scripts/prepare_research_data.py --config configs/research.json
 python scripts/prepare_benchmarks.py --config configs/research.json
 python scripts/run_research.py --phase all
+python scripts/run_aux_controls.py
+python scripts/report_research.py
+python scripts/research.py verify
+python scripts/verify_published_predictions.py
 ```
 
-运行器逐项记录状态并支持相同配置断点继续；改变配置、数据或上下文后会拒绝复用不匹配的结果。也可使用 `--phase core` / `--phase aux` 分别运行主实验和扩展。第二阶段的 adapter、预测、运行日志和人工材料仍保存在被 Git 忽略的 `outputs/research_v2/`。
+使用已保存的 v2 adapter 对单张图片进行无检索推理：
+
+```powershell
+python -m mmresearch.cli infer --config configs/research.json --image 'D:/path/to/image.jpg' --adapter outputs/research_v2/models/plain_s42_random_n128_language_epochs/adapter
+```
+
+运行器逐项记录状态并支持相同配置断点继续；改变配置、数据或上下文后会拒绝复用不匹配的结果。也可使用 `--phase core` / `--phase aux` 分别运行主实验和扩展。第二阶段的 adapter、完整运行日志和人工材料保存在被 Git 忽略的 `outputs/research_v2/`。核心 10,240 条生成文本与派生指标另公开在 `reports/research_v2/predictions_core.jsonl`，可在恢复固定数据后用上面的独立 CPU 脚本复算 F1，无须重新加载模型；不包含原始图片或人工参考描述。
 
 完成自动实验后，人工盲评材料在 `outputs/research_v2/human_review/`；人工填写后使用 `python scripts/research.py import-human --scores <实际填写的CSV路径>` 导入。空白模板不能导入，也不会被视为人工结果。CIDEr/CIDEr-D 使用固定训练参考文档频率与 regex 分词的明确变体，不直接与 COCO 排行榜比较；CLIPScore、词汇覆盖和上下文复制率均作为辅助证据。
 
-## 方法与数据
+## 第一阶段方法与数据
 
 - 数据：[jxie/flickr8k](https://huggingface.co/datasets/jxie/flickr8k)，沿用公开 train/validation/test 划分，固定种子 42 抽取 128/32/64 张图像。流式 shuffle 使用 1024 条缓冲区，因此不是全量均匀抽样。
 - 每张训练图像取前两条人工描述，转换为 256 条英文图像描述 instruction；验证损失使用首条描述，测试指标使用全部可用描述。
@@ -94,18 +119,19 @@ python scripts/search.py --text 'A dog playing outside' --top-k 5
 python scripts/search.py --image 'D:/path/to/image.jpg' --top-k 5
 ```
 
-默认 12 组实验：{zero-shot, SFT25%, SFT100%} × {concise, grounded} × {plain, RAG}。`--split validation` 可用于验证集调试。更改样本或模型配置后，应重新生成检索缓存与所有评估，避免混合不同配置的实验。
+第一阶段默认 12 组实验：{zero-shot, SFT25%, SFT100%} × {concise, grounded} × {plain, RAG}。第二阶段命令与配置见上文。`--split validation` 可用于验证集调试。更改样本或模型配置后，应重新生成检索缓存与所有评估，避免混合不同配置的实验。
 
 ## 指标解释
 
 生成任务使用大小写无关、英文单词/数字分词的 Token-F1 和 ROUGE-L F1，对每张图取各参考答案得分的最大值后求平均。它们衡量词汇重合，不能替代事实一致性、幻觉率或人工评审；不使用不适合开放式描述的分类 accuracy。分数范围为 0–1。
 
-小样本、单随机种子的结果只能提供方向性证据。SFT 可能降低指标；所有比较如实记录，不预设微调或 RAG 必然有效。后续正式研究可增加样本、随机种子、CIDEr/SPICE 和盲评。
+第一阶段的单随机种子结果用于探索；第二阶段补充三个训练种子、新确认集、CIDEr 变体、CLIPScore 和外部任务诊断。人工评分按用户选择延后，没有用自动指标代替。训练种子 SD 与图像 bootstrap 区间分别报告。
 
 ## 文件说明
 
 ```text
 configs/small.json       实验参数
+configs/research.json    v2 固定实验参数
 mmresearch/data.py      数据/指令构建、图像级抽样
 mmresearch/retrieval.py CLIP embedding、双向检索、训练集记忆库
 mmresearch/vl.py        多模态输入、assistant-only loss mask
@@ -113,6 +139,9 @@ mmresearch/train.py     PEFT LoRA、验证选模、adapter 保存
 mmresearch/evaluate.py  批量推理、逐样本预测、指标与运行信息
 mmresearch/report.py    实验 CSV、图表与训练/验证曲线
 scripts/run_all.py      完整实验编排
+scripts/run_research.py v2 主实验与扩展编排
+scripts/run_aux_controls.py v2 词数匹配的库规模补充诊断
+scripts/verify_published_predictions.py 公开生成文本的独立 CPU 核验
 tests/                 指标与数据划分检查
 reports/               可公开的实验报告和简历总结
 data/                  本地数据与权重（Git 忽略）

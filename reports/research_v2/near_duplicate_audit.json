@@ -1,0 +1,9 @@
+{
+  "algorithm": "horizontal_dhash_64",
+  "threshold": 4,
+  "flagged_pairs": 0,
+  "saved_pairs": 0,
+  "pairs_truncated": false,
+  "pairs": [],
+  "interpretation": "Heuristic review flags only. No human verification, automatic removal, or claim of decontamination."
+}

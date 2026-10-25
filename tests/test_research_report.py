@@ -110,5 +110,41 @@ class SimilarityUtilityTests(unittest.TestCase):
             _similarity_utility_data([baseline, retrieved], cfg)
 
 
+class FourArmEffectsTests(unittest.TestCase):
+    def records(self, both_value):
+        records = []
+        for regime, mode, value in (("plain", "image", .4), ("plain", "adaptive", .45),
+                                    ("noise", "image", .5), ("noise", "adaptive", both_value)):
+            record = run_record(mode, ["a", "b"], value)
+            record["regime"] = regime
+            record["model"] = regime + "_s42_random_n128_language_epochs"
+            for row in record["rows"]:
+                row.update({metric: value for metric in ("cider_d_fixed_df", "clipscore", "words", "context_copy_rate")})
+            records.append(record)
+        return records
+
+    def test_additive_and_synergistic_four_arm_contrasts(self):
+        label = "interaction:(noise_adaptive-noise_image)-(plain_adaptive-plain_image)"
+        for both_value, expected_interaction in ((.55, 0.), (.62, .07)):
+            effects = _effects(self.records(both_value))
+            noise_only = next(e for e in effects if e["effect"] == "noise_only:noise_image-plain_image" and e["metric"] == "token_f1")
+            interaction = next(e for e in effects if e["effect"] == label and e["metric"] == "token_f1")
+            self.assertAlmostEqual(noise_only["mean_delta"], .1)
+            self.assertAlmostEqual(interaction["mean_delta"], expected_interaction)
+            self.assertAlmostEqual(interaction["image_ci_low"], expected_interaction)
+            self.assertEqual(interaction["n_images"], 2)
+            self.assertEqual({e["metric"] for e in effects if e["effect"] == label},
+                             {"token_f1", "cider_d_fixed_df", "clipscore", "words"})
+
+    def test_incomplete_arm_is_pending_and_mismatched_ids_rejected(self):
+        records = self.records(.62)
+        effects = _effects(records[:3])
+        self.assertTrue(any(e["effect"] == "noise_only:noise_image-plain_image" for e in effects))
+        self.assertFalse(any(e["effect"].startswith("interaction:(noise_adaptive") for e in effects))
+        records[2]["rows"][0]["id"] = "unmatched"
+        with self.assertRaises(ValueError):
+            _effects(records)
+
+
 if __name__ == "__main__":
     unittest.main()

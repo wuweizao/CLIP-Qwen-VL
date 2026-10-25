@@ -9,6 +9,10 @@ import requests
 from concurrent.futures import ThreadPoolExecutor
 
 ROOT = Path(__file__).resolve().parents[1]
+PINNED_REVISIONS = {
+    "openai/clip-vit-base-patch32": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "Qwen/Qwen2.5-VL-3B-Instruct": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+}
 
 
 def ranged_download(url, path, size):
@@ -36,9 +40,11 @@ def ranged_download(url, path, size):
 
 def download(repo):
     endpoint = os.environ.get("HF_ENDPOINT", "https://huggingface.co")
-    response = requests.get(endpoint + "/api/models/" + repo, timeout=60)
-    response.raise_for_status()
-    revision = response.json()["sha"]
+    revision = PINNED_REVISIONS.get(repo)
+    if revision is None:
+        response = requests.get(endpoint + "/api/models/" + repo, timeout=60)
+        response.raise_for_status()
+        revision = response.json()["sha"]
     response = requests.get(endpoint + "/api/models/" + repo + "/tree/" + revision, params={"recursive": "true"}, timeout=60)
     response.raise_for_status()
     out = ROOT / "data/models" / repo.split("/")[-1]

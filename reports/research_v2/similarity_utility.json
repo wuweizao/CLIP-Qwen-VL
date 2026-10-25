@@ -3,33 +3,37 @@
     {
       "regime": "plain",
       "n_images": 256,
-      "n_fixed_training_runs": 2,
+      "n_fixed_training_runs": 3,
       "seeds": [
         42,
-        43
+        43,
+        44
       ],
-      "pearson_r": 0.08465067542248877,
+      "pearson_r": 0.10253104285632342,
       "interpretation": "descriptive association across test images; no p-value or causal interpretation; not used for gate/model selection"
     },
     {
       "regime": "retrieval",
       "n_images": 256,
-      "n_fixed_training_runs": 2,
+      "n_fixed_training_runs": 3,
       "seeds": [
         42,
-        43
+        43,
+        44
       ],
-      "pearson_r": 0.012190630783916892,
+      "pearson_r": 0.006706605575618394,
       "interpretation": "descriptive association across test images; no p-value or causal interpretation; not used for gate/model selection"
     },
     {
       "regime": "noise",
       "n_images": 256,
-      "n_fixed_training_runs": 1,
+      "n_fixed_training_runs": 3,
       "seeds": [
-        42
+        42,
+        43,
+        44
       ],
-      "pearson_r": 0.001881272728739506,
+      "pearson_r": 0.036492323105143075,
       "interpretation": "descriptive association across test images; no p-value or causal interpretation; not used for gate/model selection"
     }
   ],

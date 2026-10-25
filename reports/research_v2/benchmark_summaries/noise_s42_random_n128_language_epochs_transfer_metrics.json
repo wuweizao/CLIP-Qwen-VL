@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "task": "transfer",
+  "model": "noise_s42_random_n128_language_epochs",
+  "n": 108,
+  "n_images": 108,
+  "subset_only": true,
+  "training_domain": "Flickr8k caption instructions",
+  "identity": {
+    "config_sha256": "09adf738160a0985353dd2b26ec3db4d33ac73ec4bf9bad02dbae32868048618",
+    "data_manifests": {
+      "train": "ec1fa518bd1bc1d0b49815989c8aad6355b0dab6513f68776ef0e5626ffe0a53",
+      "validation": "92e0f89cd814ce43b9d36aa793d2af7a35a82bfd74f1098e079073e159d5e193",
+      "test": "420394e3b3fefe70afd4f0c97769a6461d027d90ce0434f48537af2f820b10d5"
+    },
+    "model": "noise_s42_random_n128_language_epochs",
+    "task": "transfer",
+    "benchmark_manifest_sha256": "5ffcc2a0c73e07f4d5311ba3cda659feb9075499332251d2a4847a2c9bafa893",
+    "benchmark_source_sha256": "0e18e0891044f773b87aa17c8561968c597fc51daf938e80d32f5ac8b6642497",
+    "adapter_sha256": "c81814c6783e7a2613f498801220ee0093239840cc62dcbf3b367622dbed1ba3",
+    "base_model_source_sha256": "fbfac68938e6d8b36716dbc401b447387bfa8225569b6808769a565f8baa34c4",
+    "protocol_version": 1,
+    "benchmark_seed": 20261025,
+    "max_new_tokens": 48
+  },
+  "seconds_this_invocation": 20.3031089999713,
+  "peak_gpu_gib": 7.112179756164551,
+  "token_f1": 0.4500595149131474,
+  "rouge_l": 0.4145104751565668,
+  "words": 10.324074074074074,
+  "context_copy_rate": 0.0,
+  "reference_detail_recall": 0.35157627865961205,
+  "cider_fixed_df": 1.5586854359223183,
+  "cider_d_fixed_df": 1.3439827126332544,
+  "reference_source": "SugarCrepe official positive captions; authorship not independently verified",
+  "selection_scope": "benchmark-conditioned subset, not representative COCO or independent human evaluation",
+  "cider_protocol": "regex tokenization; fixed Flickr8k training-reference document frequency; not COCO leaderboard comparable",
+  "clipscore": null,
+  "clipscore_status": "not_computed_to_avoid_a_second_live_GPU_model"
+}

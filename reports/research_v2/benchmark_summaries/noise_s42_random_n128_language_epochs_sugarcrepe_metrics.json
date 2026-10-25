@@ -1,0 +1,107 @@
+{
+  "status": "completed",
+  "task": "sugarcrepe",
+  "model": "noise_s42_random_n128_language_epochs",
+  "n": 112,
+  "n_images": 108,
+  "subset_only": true,
+  "training_domain": "Flickr8k caption instructions",
+  "identity": {
+    "config_sha256": "09adf738160a0985353dd2b26ec3db4d33ac73ec4bf9bad02dbae32868048618",
+    "data_manifests": {
+      "train": "ec1fa518bd1bc1d0b49815989c8aad6355b0dab6513f68776ef0e5626ffe0a53",
+      "validation": "92e0f89cd814ce43b9d36aa793d2af7a35a82bfd74f1098e079073e159d5e193",
+      "test": "420394e3b3fefe70afd4f0c97769a6461d027d90ce0434f48537af2f820b10d5"
+    },
+    "model": "noise_s42_random_n128_language_epochs",
+    "task": "sugarcrepe",
+    "benchmark_manifest_sha256": "3440c05bae1e542ce3e34f2ca8cc55c433409567ab7c7868842f00943a011659",
+    "benchmark_source_sha256": "0e18e0891044f773b87aa17c8561968c597fc51daf938e80d32f5ac8b6642497",
+    "adapter_sha256": "c81814c6783e7a2613f498801220ee0093239840cc62dcbf3b367622dbed1ba3",
+    "base_model_source_sha256": "fbfac68938e6d8b36716dbc401b447387bfa8225569b6808769a565f8baa34c4",
+    "protocol_version": 1,
+    "benchmark_seed": 20261025,
+    "max_new_tokens": 8
+  },
+  "seconds_this_invocation": 6.385802199947648,
+  "peak_gpu_gib": 7.121858596801758,
+  "accuracy": 0.9375,
+  "clip_accuracy": 0.7767857142857143,
+  "clip_ties": 0,
+  "invalid_rate": 0.0,
+  "types": {
+    "add_att": {
+      "n": 16,
+      "accuracy": 0.9375,
+      "clip_accuracy": 0.5625,
+      "invalid_rate": 0.0,
+      "positive_option_counts": {
+        "B": 8,
+        "A": 8
+      }
+    },
+    "add_obj": {
+      "n": 16,
+      "accuracy": 1.0,
+      "clip_accuracy": 0.8125,
+      "invalid_rate": 0.0,
+      "positive_option_counts": {
+        "B": 8,
+        "A": 8
+      }
+    },
+    "replace_att": {
+      "n": 16,
+      "accuracy": 0.9375,
+      "clip_accuracy": 0.9375,
+      "invalid_rate": 0.0,
+      "positive_option_counts": {
+        "A": 8,
+        "B": 8
+      }
+    },
+    "replace_obj": {
+      "n": 16,
+      "accuracy": 1.0,
+      "clip_accuracy": 0.9375,
+      "invalid_rate": 0.0,
+      "positive_option_counts": {
+        "A": 8,
+        "B": 8
+      }
+    },
+    "replace_rel": {
+      "n": 16,
+      "accuracy": 0.875,
+      "clip_accuracy": 0.8125,
+      "invalid_rate": 0.0,
+      "positive_option_counts": {
+        "B": 8,
+        "A": 8
+      }
+    },
+    "swap_att": {
+      "n": 16,
+      "accuracy": 0.9375,
+      "clip_accuracy": 0.75,
+      "invalid_rate": 0.0,
+      "positive_option_counts": {
+        "B": 8,
+        "A": 8
+      }
+    },
+    "swap_obj": {
+      "n": 16,
+      "accuracy": 0.875,
+      "clip_accuracy": 0.625,
+      "invalid_rate": 0.0,
+      "positive_option_counts": {
+        "B": 8,
+        "A": 8
+      }
+    }
+  },
+  "parser": "strict_leading_A_B_v1",
+  "clip_tie_policy": "exact positive==negative ties count as incorrect",
+  "task_shift": "balanced caption-pair choice; not the caption training task"
+}

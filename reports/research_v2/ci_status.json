@@ -1,0 +1,13 @@
+{
+  "commit": "b431a432649774b41c29eebff405544500835d05",
+  "workflow_url": "https://github.com/wuweizao/CLIP-Qwen-VL/actions/runs/40174870473",
+  "github_conclusion": "failure",
+  "github_tests_started": false,
+  "reason": "GitHub account-level restriction prevented runner allocation; tests did not start. See the workflow annotations for details.",
+  "local_tests": {
+    "count": 81,
+    "status": "passed",
+    "command": "python -m unittest discover -s tests -q"
+  },
+  "checked_date": "2026-10-25"
+}
